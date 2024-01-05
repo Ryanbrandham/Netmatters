@@ -1,0 +1,202 @@
+/* line 1, ../XAMPP/htdocs/projects/Netmatters/_sass/_global.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 5, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#sidebar {
+  display: none;
+}
+
+/* line 9, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#sidebar-button-close {
+  display: none;
+}
+
+/* line 13, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.cover-img {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  max-width: 100vw;
+  background: center no-repeat;
+  text-align: center;
+  color: white;
+  justify-content: center;
+  background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/bespoke-software-FNkv.jpg");
+}
+
+/* line 24, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.cover-img-transparency {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* line 27, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.cover-img-button {
+  background-color: #67809f;
+  color: white;
+  padding: 5px 20px;
+}
+
+/* line 32, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#consulation-arrow {
+  margin-right: 20%;
+  position: absolute;
+}
+
+/* line 36, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.search-box {
+  position: relative;
+  width: 95vw;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+/* line 42, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.search-box input {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 46, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.search-box span {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  transform: translateY(50%);
+}
+
+/* line 54, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding-top: 20px;
+}
+
+/* line 61, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card:hover {
+  color: white !important;
+}
+
+/* line 64, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card:hover span, .card:hover a {
+  background: white !important;
+}
+
+/* line 69, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card span {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* line 80, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card#bespoke-card span,
+.card#bespoke-card a, .card#bespoke-card:hover,
+.card#bespoke-card:hover span,
+.card#bespoke-card:hover a {
+  background-color: #67809f;
+  color: #67809f;
+}
+
+/* line 88, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card#bespoke-card span, .card#bespoke-card a {
+  color: white;
+}
+
+/* line 94, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card#it-support-card span,
+.card#it-support-card a, .card#it-support-card:hover,
+.card#it-support-card:hover span,
+.card#it-support-card:hover a {
+  background-color: #4183d7;
+  color: #4183d7;
+}
+
+/* line 102, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card#it-support-card span, .card#it-support-card a {
+  color: white;
+}
+
+/* line 108, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card#digital-marketing-card span,
+.card#digital-marketing-card a, .card#digital-marketing-card:hover,
+.card#digital-marketing-card:hover span,
+.card#digital-marketing-card:hover a {
+  background-color: #2ecc71;
+  color: #2ecc71;
+}
+
+/* line 116, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card#digital-marketing-card span, .card#digital-marketing-card a {
+  color: white;
+}
+
+/* line 122, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card#telecoms-card span,
+.card#telecoms-card a, .card#telecoms-card:hover,
+.card#telecoms-card:hover span,
+.card#telecoms-card:hover a {
+  background-color: #d64541;
+  color: #d64541;
+}
+
+/* line 130, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card#telecoms-card span, .card#telecoms-card a {
+  color: white;
+}
+
+/* line 136, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card#web-design-card span,
+.card#web-design-card a, .card#web-design-card:hover,
+.card#web-design-card:hover span,
+.card#web-design-card:hover a {
+  background-color: #926fb1;
+  color: #926fb1;
+}
+
+/* line 144, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card#web-design-card span, .card#web-design-card a {
+  color: white;
+}
+
+/* line 150, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card#cyber-security-card span,
+.card#cyber-security-card a, .card#cyber-security-card:hover,
+.card#cyber-security-card:hover span,
+.card#cyber-security-card:hover a {
+  background-color: #f62459;
+  color: #f62459;
+}
+
+/* line 158, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card#cyber-security-card span, .card#cyber-security-card a {
+  color: white;
+}
+
+/* line 164, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card#developer-training-card span,
+.card#developer-training-card a, .card#developer-training-card:hover,
+.card#developer-training-card:hover span,
+.card#developer-training-card:hover a {
+  background-color: #ce4125;
+  color: #ce4125;
+}
+
+/* line 172, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card#developer-training-card span, .card#developer-training-card a {
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */

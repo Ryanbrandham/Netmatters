@@ -1,0 +1,188 @@
+@import "variables";
+@import "mixins";
+@import "global";
+
+#sidebar {
+    display: none;
+}
+
+#sidebar-button-close {
+    display: none;
+}
+
+.cover-img {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+    max-width: 100vw;
+    background: center no-repeat;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/bespoke-software-FNkv.jpg");
+  }
+  .cover-img-transparency {
+    background: rgba(black, 0.3);
+  }
+  .cover-img-button {
+    background-color: #67809f;
+    color: white;
+    padding: 5px 20px;
+  }
+  #consulation-arrow {
+    margin-right: 20%;
+    position: absolute;
+  }
+  .search-box {
+    position: relative;
+    width: 95vw;
+    height: 40px;
+    margin-bottom: 20px;
+    
+    input {
+        width: 100%;
+        height: 100%;
+    }
+    span {
+        position: absolute;
+        top: 0;
+        right: 10px;
+        transform: translateY(50%);
+    }
+}
+
+.card {
+    @include flex-center; 
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-top: 20px;
+   
+    &:hover {
+        color: white !important;
+        
+        span, a { 
+        background: white !important;
+        }
+        }
+
+    span {
+        border-radius: 50%;  
+        width: 60px;
+        height: 60px;    
+        @include flex-center; 
+        font-size: 35px;    
+        color: white;  
+    }
+
+       
+    &#bespoke-card {
+        span,
+        a,
+        &:hover, 
+        &:hover span, 
+        &:hover a {
+            background-color: $bespoke-color;
+            color: $bespoke-color;
+        }
+        span, a {
+            color: white;
+        }
+
+    }
+    &#it-support-card {
+        span,
+        a,
+        &:hover, 
+        &:hover span, 
+        &:hover a {
+            background-color: $it-support-color;
+            color: $it-support-color;
+        }
+        span, a {
+            color: white;
+        }
+
+    }
+    &#digital-marketing-card {
+        span,
+        a,
+        &:hover, 
+        &:hover span, 
+        &:hover a {
+            background-color: $digital-marketing-color;
+            color: $digital-marketing-color;
+        }
+        span, a {
+            color: white;
+        }
+
+    }
+    &#telecoms-card {
+        span,
+        a,
+        &:hover, 
+        &:hover span, 
+        &:hover a {
+            background-color: $telecom-color;
+            color: $telecom-color;
+        }
+        span, a {
+            color: white;
+        }
+
+    }
+    &#web-design-card {
+        span,
+        a,
+        &:hover, 
+        &:hover span, 
+        &:hover a {
+            background-color: $web-design-color;
+            color: $web-design-color;
+        }
+        span, a {
+            color: white;
+        }
+
+    }
+    &#cyber-security-card {
+        span,
+        a,
+        &:hover, 
+        &:hover span, 
+        &:hover a {
+            background-color: $cyber-security-color;
+            color: $cyber-security-color;
+        }
+        span, a {
+            color: white;
+        }
+
+    }
+    &#developer-training-card {
+        span,
+        a,
+        &:hover, 
+        &:hover span, 
+        &:hover a {
+            background-color: $developer-training-color;
+            color: $developer-training-color;
+        }
+        span, a {
+            color: white;
+        }
+
+    }
+
+    &#telecoms-card {
+        
+    }
+
+
+
+
+    
+}
+
+
