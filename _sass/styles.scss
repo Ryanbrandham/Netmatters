@@ -19,15 +19,16 @@
     text-align: center;
     color: white;
     justify-content: center;
-    background-image: url("https://www.netmatters.co.uk/assets/images/thumbnails/full_height_slideshow/bespoke-software-FNkv.jpg");
+    background-image: url("../assets/images/home-O67Y.webp");
   }
   .cover-img-transparency {
     background: rgba(black, 0.3);
   }
-  .cover-img-button {
+  .button {
     background-color: #67809f;
     color: white;
-    padding: 5px 20px;
+        
+
   }
   #consulation-arrow {
     margin-right: 20%;
@@ -51,7 +52,7 @@
     }
 }
 
-.card {
+.card-services {
     @include flex-center; 
     flex-direction: column;
     border: 1px solid black;
@@ -178,7 +179,6 @@
     &#telecoms-card {
         
     }
-
 
 
 

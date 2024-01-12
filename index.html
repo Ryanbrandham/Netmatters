@@ -8,7 +8,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="_css/styles.css">
+    <!-- Google Material Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Bootstrap 3.0 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts --><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+
     <style>
 
     </style>
@@ -19,7 +27,7 @@
 
 <body>
     <div class="top_nav">
-        <img src="assets/images/f-logo.png" class="f-logo" width="200px" alt="Netmatters logo">
+        <img src="assets/images/f-logo.webp" class="f-logo" width="200px" alt="Netmatters logo">
         <a href="tel:--------" style="font-size:32px"><span class="material-symbols-outlined">phone_in_talk</span></a>
         <button style="font-size:32px" onclick="opensidebar()" id="sidebar-button-open"><span class="material-symbols-outlined">menu</span>
         <button style="font-size:32px" onclick="closesidebar()" id="sidebar-button-close"><span class="material-symbols-outlined">close</span></button>
@@ -29,71 +37,291 @@
 
     </div>
     
-    <main>
+<main>
 
-         <div class="cover-img" alt="">
-            <div class="cover-img-transparency">
-                <h1>Bespoke Software</h1>
-                <h2>Delivering expert bespoke software solutions across a range of industries<h2>
-                <a href="#" class="cover-img-button">BOOK A FREE CONSULTATION<span class="material-symbols-outlined" id="consulation-arrow">arrow_right_alt</span></a></button>
-            </div>
+        <div class="cover-img" alt="">
+        <div class="cover-img-transparency">
+            <h1>Bespoke Software</h1>
+            <h2>Delivering expert bespoke software solutions across a range of industries<h2>
+            <a href="#" class="button">BOOK A FREE CONSULTATION<span class="material-symbols-outlined" id="consulation-arrow">arrow_right_alt</span></a></button>
         </div>
-    
-        <h1>Our Services</h1>
-        <div id="our-services">
-            <div class="card" id="bespoke-card">
-                <span class="material-symbols-outlined">laptop_windows</span>
-                <h2>Bespoke Software</h2>
-                <small>Bespoke software solutions for all your business needs including integrations and reporting.</small>
-                <a href="#">READ MORE</a>
-            </div>
-            
-            <div class="card" id="it-support-card">
-                <span class="material-symbols-outlined">desktop_windows</span>
-                <h2>IT Support</h2>
-                <small>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</small>
-                <a href="#">READ MORE</a>
-            </div>
-            
-            <div class="card" id="digital-marketing-card">
-                <span class="material-symbols-outlined">stacked_bar_chart</span>
-                <h2>Digital Marketing</h2>
-                <small>Driven brand awareness &amp; ROI through creative digital marketing campaigns.</small>
-                <a href="#">READ MORE</a>
-            </div>
-            
-            <div class="card" id="telecoms-card">
-                <span class="material-symbols-outlined">phone_in_talk</span>
-                <h2>Telecoms Services</h2>
-                <small>Business telephony solutions, including mobile &amp; connectivty solutions.</small>
-                <a href="#">READ MORE</a>
-            </div>
-            
-            <div class="card" id="web-design-card">
-                <span class="material-symbols-outlined">code</span>
-                <h2>Web Design</h2>
-                <small>User-centric design for businesses looking to make a lasting impression.</small>
-                <a href="#">READ MORE</a>
-            </div>
-            
-            <div class="card" id="cyber-security-card">
-                <span class="material-symbols-outlined">security</span>
-                <h2>Cyber Security</h2>
-                <small>Prevention, testing, consultancy &amp; breach management services.</small>
-                <a href="#">READ MORE</a>
-            </div>
-            
-            <div class="card" id="developer-training-card">
-                <span class="material-symbols-outlined">school</span>
-                <h2>Developer Training</h2>
-                <small>Web design &amp; software training courses designed to secure a job in tech.</small>
-                <a href="#">READ MORE</a>
-            </div>
-        </div>
+    </div>
 
-    </main>
+    <h1>Our Services</h1>
+    <div id="our-services">
+        <a href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="bespoke-card">
+            <span class="material-symbols-outlined">laptop_windows</span>
+            <h2>Bespoke Software</h2>
+            <small>Bespoke software solutions for all your business needs including integrations and reporting.</small>
+            <a href="#">READ MORE</a>
+        </a>
+        
+        <a href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="it-support-card">
+            <span class="material-symbols-outlined">desktop_windows</span>
+            <h2>IT Support</h2>
+            <small>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</small>
+            <a href="#">READ MORE</a>
+        </a>
+        
+        <a href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="digital-marketing-card">
+            <span class="material-symbols-outlined">stacked_bar_chart</span>
+            <h2>Digital Marketing</h2>
+            <small>Driven brand awareness &amp; ROI through creative digital marketing campaigns.</small>
+            <a href="#">READ MORE</a>
+        </a>
+        
+        <a href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="telecoms-card">
+            <span class="material-symbols-outlined">phone_in_talk</span>
+            <h2>Telecoms Services</h2>
+            <small>Business telephony solutions, including mobile &amp; connectivty solutions.</small>
+            <a href="#">READ MORE</a>
+        </a>
+        
+        <a href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="web-design-card">
+            <span class="material-symbols-outlined">code</span>
+            <h2>Web Design</h2>
+            <small>User-centric design for businesses looking to make a lasting impression.</small>
+            <a href="#">READ MORE</a>
+        </a>
+        
+        <a href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="cyber-security-card">
+            <span class="material-symbols-outlined">security</span>
+            <h2>Cyber Security</h2>
+            <small>Prevention, testing, consultancy &amp; breach management services.</small>
+            <a href="#">READ MORE</a>
+        </a>
+        
+        <a href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="developer-training-card">
+            <span class="material-symbols-outlined">school</span>
+            <h2>Developer Training</h2>
+            <small>Web design &amp; software training courses designed to secure a job in tech.</small>
+            <a href="#">READ MORE</a>
+        </a>
+    </div>
+
+    <div class="view-container">
+        <a href="#">View Our Work<span class="material-symbols-outlined" id="view-our-work-arrow" >arrow_forward</span></a>
+
+        <img src="assets/images/norfolk_prohelp_bw.webp"> 
+    </div>
+
+    <div class="container-section">
+        <h1>Welcome To Netmatters</h1>
+        <strong>Netmatters is a leading 
+        <a href="#">Bespoke Software</a>, 
+        <a href="#">IT Support</a>, and 
+        <a href="#">Digital Marketing</a> company based in the East of England with offices in 
+        <a href="#" target="_blank" rel="noopener noreferrer">London</a>,&nbsp;<a href="#">Cambridge</a>, 
+        <a href="#">Wymondham</a>, and <a href="#">Great Yarmouth</a>.</strong>
+
+        <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
+        <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
+        <div class="button-primary">
+            <a href="">WHY CHOOSE US?<span class="material-symbols-outlined">arrow_forward</span></a>
+            <a href="">OUR CULTURE<span class="material-symbols-outlined">arrow_forward</span></a>
+        </div>
+        <h1>What Our Clients Think</h1>
+        <span class="material-symbols-outlined">kid_starkid_starkid_starkid_starkid_star</span>
+        <p><span class="quote">Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</span><p>
+        <p><span class="quote-author">Eleanor Bishop, Head of Marketing - <a href="#">Ashcroft Partnership LLP</a></span></p>
+        <a href="#" class="button" id="google">GOOGLE REVIEWS<span class="material-symbols-outlined">arrow_forward</span></a>
+        <a href="#" class="button" id="trustpilot">TRUSTPILOT REVIEWS<span class="material-symbols-outlined">arrow_forward</span></a>
+    </div>
+
+    <div class="news-section">
+        <h1>Latest News</h1>
+        
+        
+        
+        
+        
+        <a href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-news" id="coalition">
+            <img src="assets/images/scion-coalition-scheme-Ody3.webp">
+            <h2>Scion Coalition Scheme Trainee Web Developer</h2>
+            <p>Salary Range £22,000 per annum Hours 40 Location Wymondham, Norfolk. Flexible working hours and part...</p>
+            <a href="#" class="button" class="button-developer-training">TRUSTPILOT REVIEWS<span class="material-symbols-outlined">arrow_forward</span></a>
+            <div class="poster">
+                <img src="assets/images/rebecca-moore-1fh7.webp" class="avatar">
+                <div class="poster-text">
+                    <p><strong>Posted by Rebecca Moore</strong></p>
+                    <br>
+                    5th January 2024
+                </div>
+
+            </div>
+        </a>
+
+
+
+
+        <a href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-news" id="coalition">
+            <img src="assets/images/east-anglian-air-1pHi.webp">
+            <h3>
+                East Anglian Air Ambulance - Introducing a 3C... 
+                <span class="minute-read">
+                    - 4 minute read
+                </span>
+            </h3>
+                <p>The Client Championing ‘Your Local Life-Saving Charity’ the East Anglian Air Ambulance (EAAA) is a r...</p>
+            <a href="#" class="button" class="button-developer-training">TRUSTPILOT REVIEWS<span class="material-symbols-outlined">arrow_forward</span></a>
+            <div class="poster">
+                <img src="assets/images/netmatters-ltd-VXAv.webp" class="avatar">
+                <div class="poster-text">
+                    <p><strong>Posted by Netmatters</strong></p>
+                    <br>
+                    2nd January 2024
+                </div>
+
+            </div>
+        </a>
+
+
+
+
+
+        
+        
+
+        <a href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-news" id="coalition">
+            <img src="assets/images/jamie-slater-DJvi.webp">
+            <h3>
+                Jamie Slater - Netmatters 5 Year Legend
+                <span class="read-time">
+                    - 3 minute read
+                </span>
+            </h3>
+            <p>Today, we celebrate the brilliant accomplishments of Jamie Slater as he receives the Netmatters Long...</p>
+            <a href="#" class="button" class="button-developer-training">TRUSTPILOT REVIEWS<span class="material-symbols-outlined">arrow_forward</span></a>
+            <div class="poster">
+                <img src="assets/images/netmatters-ltd-VXAv.webp" class="avatar">
+                <div class="poster-text">
+                    <p><strong>Posted by Netmatters</strong></p>
+                    <br>
+                    2nd January 2024
+                </div>
+
+            </div>
+        </a>
+
+
+        <div class="view-container">
+            <a href="#">View All<span class="material-symbols-outlined" id="view-our-work-arrow" >arrow_forward</span></a>
+
+            <img src="assets/images/norfolk_prohelp_bw.webp"> 
+        </div>
+    </div>
+        <form class="email-signup">
+            <h1>Email Newsletter Sign-Up</h1>
+            <label for="name">First Name</label></br>
+            <input type="text" id="name" name="name"><br>
+            <label for="email">Last Name</label></br>
+            <input type="text" id="email" name="email"><br>
+            <input type="checkbox" id="privacy-checkbox" name="privacy-checkbox">
+            <label for="privacy-checkbox">
+                Please tick this box if you wish to receive marketing information from us.
+                Please see our <a href="https://www.netmatters.co.uk/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></label></br>
+                <a href="">WHY CHOOSE US?<span class="material-symbols-outlined">arrow_forward</span></a>
+        </form>
+    </div>
+
+    <div class="information"></div>
+        <img src="assets/images/nm-logo-white-med.webp">
+        <h2>FOLLOW US ON:</h2>
+            
+        
+            <div class="socials">
+                <div class="facebook">
+                    <a class="btn btn-primary" style="background-color: #212330;" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                
+
+                <div class="linkedin">
+                    <a class="btn btn-primary" style="background-color: #212330;" href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                
+
+                <div class="twitter">
+                    <a class="btn btn-primary" style="background-color: #212330;" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                
+
+                <div class="instagram">
+                    <a class="btn btn-primary" style="background-color: #212330;" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+    </div>
     
     
+    
+    
+    
+    
+    <div class="about-section">
+        <h4>ABOUT NETMATTERS</h4>
+        
+        <ul>
+            <li class=" "><a href="https://www.netmatters.co.uk/news">News</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/our-careers">Our Careers</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/team">Our Team</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/contact-us">Contact Us</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/privacy-policy">Privacy Policy</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/cookie-policy">Cookie Policy</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/data-retention-disposal-policy">Data Retention &amp; Disposal Policy</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/cctv-policy">CCTV Policy</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/our-culture/environmental-policy">Environmental Policy</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/terms-and-conditions">Terms &amp; Conditions</a></li>
+        </ul>
+
+        <h4>OUR SERVICES</h4>
+
+        <ul>
+            <li class=" "><a href="https://www.netmatters.co.uk/news">Bespoke Software</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/our-careers">IT Support</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/team">Digital Marketing</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/contact-us">Telecoms Services</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/privacy-policy">Web Design</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/cookie-policy">Cyber Security</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/data-retention-disposal-policy">Developer Training</a></li>
+        </ul>
+
+        <h4>OUR INDUSTRIES</h4>
+
+        <ul>
+            <li class=" "><a href="https://www.netmatters.co.uk/news">Financial Services</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/our-careers">Construction</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/team">Retail &amp; E-Commerce</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/contact-us">Non-Profits</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/privacy-policy">SME's</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/cookie-policy">Healthcare</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/data-retention-disposal-policy">Education &amp; Training</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/cctv-policy">Travel &amp; Leisure</a></li>
+        </ul>
+
+        <h4>LOCATIONS</h4>
+
+        <ul>
+            <li class=" "><a href="https://www.netmatters.co.uk/news">London Office</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/our-careers">Cambridge Office</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/team">Wymondham Office</a></li>
+            <li class=" "><a href="https://www.netmatters.co.uk/contact-us">Great Yarmouth Office</a></li>
+        </ul>
+
+    </div>
+
+
+</main>
+    
+    <footer>
+        <p><span class="material-symbols-outlined">copyright</span>Copyright Netmatters 2024.<br>All rights reserved<br>Sitemap</p>
+    </footer>
     
     
     
@@ -219,7 +447,9 @@
             </li>
         </ul>
     </div>
+    
 
+    
     <script>
         function opensidebar() {
           document.getElementById("sidebar").style.width = "25%";
