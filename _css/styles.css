@@ -3,17 +3,17 @@ a {
   text-decoration: none;
 }
 
-/* line 5, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 8, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 #sidebar {
   display: none;
 }
 
-/* line 9, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 12, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 #sidebar-button-close {
   display: none;
 }
 
-/* line 13, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 18, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .cover-img {
   display: flex;
   flex-direction: column;
@@ -26,38 +26,40 @@ a {
   background-image: url("../assets/images/home-O67Y.webp");
 }
 
-/* line 24, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 29, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .cover-img-transparency {
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 27, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 32, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .button {
   background-color: #67809f;
   color: white;
 }
 
-/* line 33, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 38, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 #consulation-arrow {
   margin-right: 20%;
   position: absolute;
 }
 
-/* line 37, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 42, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .search-box {
   position: relative;
-  width: 95vw;
+  width: 100vw;
   height: 40px;
   margin-bottom: 20px;
 }
 
-/* line 43, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 49, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .search-box input {
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-/* line 47, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 55, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .search-box span {
   position: absolute;
   top: 0;
@@ -65,29 +67,46 @@ a {
   transform: translateY(50%);
 }
 
-/* line 55, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 63, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services {
   display: flex;
   text-align: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid black;
+  border: 1px solid lightgray;
   border-radius: 15px;
   padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background: #ffffff;
 }
 
-/* line 62, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 73, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card-services a {
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5%;
+}
+
+/* line 82, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.card-services small {
+  margin: 0 20px;
+}
+
+/* line 86, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services:hover {
   color: white !important;
 }
 
-/* line 65, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 89, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services:hover span, .card-services:hover a {
   background: white !important;
 }
 
-/* line 70, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 94, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services span {
   border-radius: 50%;
   width: 60px;
@@ -100,7 +119,7 @@ a {
   color: white;
 }
 
-/* line 81, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 105, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services#bespoke-card span,
 .card-services#bespoke-card a, .card-services#bespoke-card:hover,
 .card-services#bespoke-card:hover span,
@@ -109,12 +128,12 @@ a {
   color: #67809f;
 }
 
-/* line 89, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 113, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services#bespoke-card span, .card-services#bespoke-card a {
   color: white;
 }
 
-/* line 95, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 119, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services#it-support-card span,
 .card-services#it-support-card a, .card-services#it-support-card:hover,
 .card-services#it-support-card:hover span,
@@ -123,12 +142,12 @@ a {
   color: #4183d7;
 }
 
-/* line 103, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 127, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services#it-support-card span, .card-services#it-support-card a {
   color: white;
 }
 
-/* line 109, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 133, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services#digital-marketing-card span,
 .card-services#digital-marketing-card a, .card-services#digital-marketing-card:hover,
 .card-services#digital-marketing-card:hover span,
@@ -137,12 +156,12 @@ a {
   color: #2ecc71;
 }
 
-/* line 117, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 141, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services#digital-marketing-card span, .card-services#digital-marketing-card a {
   color: white;
 }
 
-/* line 123, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 147, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services#telecoms-card span,
 .card-services#telecoms-card a, .card-services#telecoms-card:hover,
 .card-services#telecoms-card:hover span,
@@ -151,12 +170,12 @@ a {
   color: #d64541;
 }
 
-/* line 131, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 155, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services#telecoms-card span, .card-services#telecoms-card a {
   color: white;
 }
 
-/* line 137, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 161, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services#web-design-card span,
 .card-services#web-design-card a, .card-services#web-design-card:hover,
 .card-services#web-design-card:hover span,
@@ -165,12 +184,12 @@ a {
   color: #926fb1;
 }
 
-/* line 145, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 169, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services#web-design-card span, .card-services#web-design-card a {
   color: white;
 }
 
-/* line 151, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 175, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services#cyber-security-card span,
 .card-services#cyber-security-card a, .card-services#cyber-security-card:hover,
 .card-services#cyber-security-card:hover span,
@@ -179,12 +198,12 @@ a {
   color: #f62459;
 }
 
-/* line 159, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 183, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services#cyber-security-card span, .card-services#cyber-security-card a {
   color: white;
 }
 
-/* line 165, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 189, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services#developer-training-card span,
 .card-services#developer-training-card a, .card-services#developer-training-card:hover,
 .card-services#developer-training-card:hover span,
@@ -193,9 +212,411 @@ a {
   color: #ce4125;
 }
 
-/* line 173, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+/* line 197, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
 .card-services#developer-training-card span, .card-services#developer-training-card a {
   color: white;
+}
+
+/* line 208, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#email-signup {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  padding-top: 40px;
+}
+
+/* line 212, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#email-signup h1 {
+  font-size: 38px;
+}
+
+/* line 215, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#email-signup label {
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+/* line 219, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#email-signup input {
+  width: 100%;
+  padding: 16px;
+}
+
+/* line 223, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#email-signup .required {
+  color: red;
+}
+
+/* line 229, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#welcome-to-netmatters {
+  background-color: #2e2f36;
+  padding-bottom: 60px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+/* line 235, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#welcome-to-netmatters h1 {
+  font-size: 40px;
+}
+
+/* line 238, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#welcome-to-netmatters a {
+  text-decoration: none;
+  color: white;
+}
+
+/* line 242, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#welcome-to-netmatters p {
+  font-size: 18px;
+}
+
+/* line 245, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#welcome-to-netmatters strong {
+  font-size: 18px;
+}
+
+/* line 252, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#view-container, #view-container2 {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 258, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#view-container a, #view-container2 a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* line 264, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#view-container span, #view-container2 span {
+  vertical-align: bottom;
+  margin-bottom: 6.2px;
+}
+
+/* line 273, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#work-carousel {
+  display: flex;
+  padding: 40px 0px;
+  size: 250px;
+}
+
+/* line 279, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#work-carousel img {
+  padding: 0 20px;
+  filter: grayscale(100%);
+}
+
+/* line 283, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#work-carousel :hover {
+  filter: grayscale(0%) !important;
+}
+
+/* line 288, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.button-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  background-color: #272936;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* line 298, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#stars {
+  font-size: 55px;
+}
+
+/* line 302, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#quote {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* line 308, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#quote-author {
+  font-size: 20px;
+  font-weight: bold;
+  color: grey;
+}
+
+/* line 314, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#google {
+  font-size: 20px;
+  font-weight: bold;
+  background: #4387f6;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+/* line 320, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#google span {
+  padding-left: 5px;
+  margin-bottom: 6.2px;
+  vertical-align: bottom;
+}
+
+/* line 327, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#trustpilot {
+  font-size: 20px;
+  font-weight: bold;
+  background: #00b67b;
+  padding: 15px 20px;
+  border-radius: 5px;
+}
+
+/* line 333, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#trustpilot span {
+  padding-left: 5px;
+  margin-bottom: 6.2px;
+  vertical-align: bottom;
+}
+
+/* line 341, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section {
+  padding-bottom: 30px;
+}
+
+/* line 344, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section #ambulance h2, #news-section #ambulance h3 {
+  color: #d64541;
+}
+
+/* line 347, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section #ambulance .img-container {
+  position: relative;
+}
+
+/* line 350, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section #ambulance .news-button {
+  position: absolute;
+  font-size: 15px;
+  color: white;
+  padding: 2px 4px;
+  background-color: #d64541;
+  right: 0px;
+  top: -15px;
+  border-radius: 0%;
+}
+
+/* line 361, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section #ambulance a {
+  background-color: #d64541;
+}
+
+/* line 367, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section #coalition h2 {
+  color: #67809f;
+}
+
+/* line 370, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section #coalition .img-container {
+  position: relative;
+}
+
+/* line 373, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section #coalition .news-button {
+  position: absolute;
+  font-size: 15px;
+  color: white;
+  padding: 2px 4px;
+  background-color: #67809f;
+  right: 0px;
+  top: -15px;
+  border-radius: 0%;
+}
+
+/* line 384, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section #coalition a {
+  background-color: #67809f;
+}
+
+/* line 391, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section #jamie h3 {
+  color: #4183d7;
+}
+
+/* line 394, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section #jamie .img-container {
+  position: relative;
+}
+
+/* line 397, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section #jamie .news-button {
+  position: absolute;
+  font-size: 15px;
+  color: white;
+  padding: 2px 4px;
+  background-color: #4183d7;
+  right: 0px;
+  top: -15px;
+  border-radius: 0%;
+}
+
+/* line 408, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section #jamie a {
+  background-color: #4183d7;
+}
+
+/* line 415, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section .card-news {
+  border: 1px solid rgba(207, 207, 207, 0.726);
+  background-color: white;
+  margin-top: 20px;
+}
+
+/* line 419, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section .card-news .news-photo {
+  width: 100%;
+}
+
+/* line 422, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section .card-news h3, #news-section .card-news h2 {
+  font-size: 18px;
+  justify-content: center;
+  padding: 25px;
+}
+
+/* line 426, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section .card-news h3 .minute-read, #news-section .card-news h2 .minute-read {
+  color: grey;
+}
+
+/* line 436, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section p {
+  justify-content: center;
+  padding: 0px 25px;
+  color: gray;
+}
+
+/* line 442, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section a {
+  display: inline-block;
+  font-weight: bold;
+  margin: 25px 0 0 25px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/* line 452, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section .poster {
+  padding-top: 32px;
+  border-top: 1px solid rgba(207, 207, 207, 0.726);
+  margin: 20px 0px 10px 0px;
+  display: inline-flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* line 460, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#news-section .poster .avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+/* line 472, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#view-container2 {
+  margin-bottom: 50px;
+}
+
+/* line 473, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#view-container2 img {
+  width: 60%;
+}
+
+/* line 479, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#information {
+  background-color: #2e2f36;
+  color: white !important;
+  text-decoration: none;
+}
+
+/* line 483, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#information a {
+  color: white;
+}
+
+/* line 486, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#information ul {
+  list-style-type: none;
+  display: inline;
+}
+
+/* line 492, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+footer {
+  font-size: 15px;
+  color: white;
+  background-color: #212330;
+}
+
+/* line 498, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.socials {
+  display: grid;
+  grid-template-areas: "facebook linkedin" "twitter instagram";
+  grid-template-columns: 20%;
+  gap: 35px 40px;
+}
+
+/* line 506, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.socials .social-button {
+  padding: 20px 40px;
+  background-color: #212330;
+}
+
+/* line 510, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.socials i {
+  position: relative;
+  width: 14px;
+  font-size: 30px;
+  right: 6px;
+  top: 5px;
+}
+
+/* line 520, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#follow-us-img {
+  margin: 20px 0 10px 0;
+  width: 75%;
+}
+
+/* line 525, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+.sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -o-sticky;
+  position: -ms-sticky;
+  position: sticky;
+  text-decoration: none;
+  color: white;
+  top: 0;
+}
+
+/* line 536, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#manage-consent {
+  font-weight: bold;
+  background-color: #75788a;
+  border-radius: 5px;
+  padding: 2px 5px 5px 10px;
+  height: auto;
+}
+
+/* line 543, ../XAMPP/htdocs/projects/Netmatters/_sass/styles.scss */
+#chat-symbol {
+  font-weight: bold;
+  background-color: #75788a;
+  border-radius: 50%;
+  padding: 20px;
+  top: 500px;
 }
 
 /*# sourceMappingURL=styles.css.map */
