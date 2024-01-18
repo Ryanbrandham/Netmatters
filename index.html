@@ -20,13 +20,18 @@
 </head>
 
 <body style="background-color: rgba(0,0,0,.05);">
-    <div class="container" class="top_nav">
-        <img src="assets/images/f-logo.webp" class="f-logo" width="200px" alt="Netmatters logo">
-        <a href="tel:--------" style="font-size:32px"><span class="material-symbols-outlined">phone_in_talk</span></a>
-        <button style="font-size:32px" onclick="opensidebar()" id="sidebar-button-open"><span class="material-symbols-outlined">menu</span>
-        <button style="font-size:32px" onclick="closesidebar()" id="sidebar-button-close"><span class="material-symbols-outlined">close</span></button>
-        <form action="" method="post" class="search-box">
-            <input type="text" placeholder="Search..." class="search-box"><span class="material-symbols-outlined">search</span></input>
+    <div class="container" id="top_nav">
+        <div class="nav-buttons">
+        <img src="assets/images/f-logo.webp" class="f-logo" width="214.594px" height="37.359px" alt="Netmatters logo">
+
+            <a href="tel:--------" style="font-size:32px"><span class="material-symbols-outlined">phone_in_talk</span></a>
+            <button style="font-size:32px" onclick="opensidebar()" id="sidebar-button-open"><span class="material-symbols-outlined">menu</span>
+            <button style="font-size:32px" onclick="closesidebar()" id="sidebar-button-close"><span class="material-symbols-outlined">close</span></button>
+        </div>
+        <br>
+        <br>
+        <form action="" method="post" class="search-box" >
+            <input type="text" placeholder="Search..." class="container"><span class="material-symbols-outlined">search</span></input>
         </form>
 
     </div>
@@ -42,14 +47,34 @@
 
     <div class="cover-img" alt="">
         <div class="cover-img-transparency">
-            <h1>Bespoke Software</h1>
-            <h2>Delivering expert bespoke software solutions across a range of industries<h2>
-            <a href="#" class="button">BOOK A FREE CONSULTATION<span class="material-symbols-outlined" id="consulation-arrow">arrow_right_alt</span></a></button>
+          
+          
+          
+            <div id="bespoke-software-card">
+                <h1><br>Bespoke<br>Software</h1>
+                <h2>Delivering expert bespoke software solutions<br> across a range of industries<h2>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <a href="">FIND OUT MORE<span class="material-symbols-outlined">arrow_forward</span></a>                <br>
+
+                <br>
+                <br>            
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+       
         </div>
     </div>
 
-    <h1 class="container">Our Services</h1>
-    <div class="container" id="our-services">
+    <br>
+    <h1 class="container" id="our-services">Our Services</h1>
+    <br>
+    <div class="container">
         <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="bespoke-card">
             <span class="material-symbols-outlined">laptop_windows</span>
             <h2>Bespoke Software</h2>
@@ -105,6 +130,7 @@
         <br>
 
     </div>
+
     <div class="container" id="work-carousel">
         <img src="assets/images/norfolk_prohelp.webp">
         <img src="assets/images/investing-in-future-growth.webp">
@@ -119,6 +145,7 @@
         <img src="assets/images/living_wage.webp">
 
     </div> 
+
 
     <div class="container" id="welcome-to-netmatters">
         <h1><bold>Welcome To Netmatters</bold></h1>
@@ -264,11 +291,22 @@
         <input type="text" id="name" name="name"><br>
         <label for="email">Email<span class="required">*</span></label></br>
         <input type="text" id="email" name="email"><br>
-        <input type="checkbox" id="privacy-checkbox" name="privacy-checkbox">
-        <label for="privacy-checkbox">
-            Please tick this box if you wish to receive marketing information from us.
-            Please see our <a href="https://www.netmatters.co.uk/privacy-policy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></label></br>
-            <a href="">SUBSCRIBE<span class="material-symbols-outlined">arrow_forward</span></a>
+        <label id="custom-checkbox">
+                <span class="media-left">
+                    <span class="checkbox-button">
+                        <input name="email-checkbox" type="checkbox" value="1">
+                        <span id="checkmark"></span>
+                    </span>
+                </span>
+                <span class="media-body">
+                <br>
+                Please tick this box if you wish to receive marketing information from us.
+                Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.
+                </span>
+            </span>
+    </label>
+          
+
     </form>
 
     <div class="container" id="information">
@@ -386,34 +424,6 @@
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <div id="sidebar">
         <a href="https://www.netmatters.co.uk/contact-us">Contact Us</a>
         <a href="https://www.netmatters.co.uk/contact-us">Bespoke Software</a>
@@ -502,7 +512,11 @@
         </ul>
     </div>
     
+    <button id="manage-consent" class="sticky" onclick="openConsent()">Manage Consent</button>
 
+    <button id="chat-symbol" class="sticky" onclick="openSofia()"><span class="material-symbols-outlined">comment</button></span>
+        
+    <button id="chat-symbol-open" class="sticky" onclick="closeSofia()"><span class="material-symbols-outlined">expand_more</button></span>
     
     <script>
         function opensidebar() {
@@ -518,32 +532,61 @@
         }
         </script>
 
+    <script>
+        function openSofia() {
+        document.getElementById("sofia-popup").style.display = "block";
+        document.getElementById("sofia-popup").style.position = "sticky";
+        document.getElementById("chat-symbol").style.display = 'none';
+        document.getElementById("chat-symbol-open").style.display = "inline-block";
+        }
+        function closeSofia() {
+        document.getElementById("sofia-popup").style.display = "none";
+        document.getElementById("chat-symbol").style.display = "inline-block";
+        document.getElementById("chat-symbol-open").style.display = "none";
+        }
+    </script>
 
 
 
-<a href="#" id="manage-consent" class="sticky">Manage Consent</a>
+    <script>
+        function openConsent() {
+        document.getElementById("sidebar").style.width = "25%";
+        document.getElementById("sidebar").style.display = "block";
+        }
 
-<a href="#" id="chat-symbol" class="sticky"><span class="material-symbols-outlined">comment</a></span>
+
+    </script>
 
 
 
+    <div class="container" id="sofia-popup">
+        <div id="sticky-sofia">
+            <div id="sofia-top">
+                <p id="threecx">Powered by 3CX</p>
+                <img src="assets/images/sofia.svg" alt="avatar">
+            </div>
+                <br>
+                <h1>Sofia</h1>
+                <br>
+                <br>
+                <br>
+                
+            <div id="sofia-fields">
+                <p>Could we have your name, please?</p>
+                <input placeholder="Name" autocomplete="false" maxlength="50" type="text"> 
+                <p id="sofia-required">Required field</p>
+            </div> 
 
+                <button id="sofia-submit">
+                    <p><span class="material-symbols-outlined">Chat</span>Chat</p>
+                    
+                </button>
+            </div>
+        </div>
+</div>
 
 
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </html>
 

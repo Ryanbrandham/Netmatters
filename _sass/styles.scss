@@ -2,8 +2,45 @@
 @import "mixins";
 @import "global";
 
+html, body {
+    width: 100vw !important;
+    max-width: 100vw;
+}
+#top_nav {
+    position: sticky;
+    .nav-buttons {
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    img {
+        top: 15px;
+        position: relative;
+    }
+    a {
+        text-decoration: none;
+        padding-top: 10px;
+        span {
+            font-size: 30px;
+            color: $primary-color;
 
+        }
+    }
+    button {
+        width: 60px;
+        background-color: $primary-color;
+        color: white;
+        border-radius: 5px;
 
+        span{
+            font-size: 40px;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+    }
+
+}
 
 #sidebar {
     display: none;
@@ -25,15 +62,37 @@
     color: white;
     justify-content: center;
     background-image: url("../assets/images/home-O67Y.webp");
-  }
-  .cover-img-transparency {
-    background: rgba(black, 0.3);
-  }
-  .button {
-    background-color: #67809f;
-    color: white;
-        
+    }
+    .cover-img-transparency {
+        background: rgba(black, 0.3);
 
+
+
+        h1 {
+            font-size: 42px;
+            font-weight: bold;
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        a {
+            font-size: 20px;
+            border-radius: 5px;
+            color: white;
+            padding: 20px;
+            background-color: $bespoke-color;
+            span {
+                position: relative;
+                left: 5px;
+                vertical-align: bottom;
+            }
+        }
+
+    }
+    .button {
+        background-color: #67809f;
+        color: white;
   }
   #consulation-arrow {
     margin-right: 20%;
@@ -41,9 +100,11 @@
   }
   .search-box {
     position: relative;
-    width: 100vw;
-    height: 40px;
+    width: 93vw;
+    height: 50px;
+    margin-top: -20px;
     margin-bottom: 20px;
+
     
     
     input {
@@ -51,14 +112,27 @@
         height: 100%;
         background-color: rgba(0,0,0,.1);
         border: 2px solid rgba(0,0,0,.1);
+        padding-right: 50px;
     }
     span {
         position: absolute;
+        font-size: 25px;
+        font-weight: bold;
         top: 0;
         right: 10px;
         transform: translateY(50%);
     }
 }
+
+#our-services {
+    font-size: 40px;
+    font-weight: bold
+}
+
+
+
+
+
 
 .card-services {
     @include flex-center; 
@@ -209,6 +283,7 @@
     background-color: rgba(0,0,0,.1);
     width: 100vw;
     padding-top: 40px;
+    margin-bottom: 50px;
     h1 {
         font-size: 38px;
     }
@@ -223,6 +298,38 @@
     .required {
         color: red;
     }
+    #subscribe {
+        color: white;
+        background-color: $primary-color;
+        padding: 15px;
+        font-size: 15px;
+        font-weight: bold;
+    }
+}
+
+#custom-checkbox {
+
+    .media-left .checkbox-button input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+
+}
+
+
+#checkmark {
+    position: relative;
+    top: 25px;
+    padding: 2px 13px;
+    border: 3px solid $primary-color !important;
+    border-radius: 2px;
+
+    &:active {
+        background-color: $primary-color;
+    }
+  }
+
+
 
 }
 
@@ -274,7 +381,7 @@
     display: flex;
     padding: 40px 0px;
     size: 250px;
-
+    overflow-x: hidden;
 
     img {
         padding: 0 20px;
@@ -530,23 +637,104 @@ footer {
     position: sticky;
     text-decoration: none;
     color: white;
-    top: 0;
+    border: none;
 }
+
 
     #manage-consent {
         font-weight: bold;
         background-color: #75788a;
         border-radius: 5px;
         padding: 2px 5px 5px 10px;
-        height: auto;
+        position: fixed;
+        bottom: -5px;
+        left: -5px;
     }   
-    #chat-symbol {
+    #chat-symbol, #chat-symbol-open {
         font-weight: bold;
-        background-color: #75788a;
+        background-color: $primary-color;
         border-radius: 50%;
-
-        padding: 20px;
-        top: 500px;
+        position: fixed;
+        padding: 15px;
+        right: 25px;
+        bottom: 20px;
+        box-shadow: 0px 5px 5px #212330;
+        span {
+            vertical-align: middle;
+            font-size: 35px;
+        }
     }   
+    #chat-symbol-open {
+        display: none;
+    }
+
+
+    #sofia-popup {
+        display: none;
+        position: fixed;
+        text-align: center;
+        border-radius: 6px;
+        z-index: 10;
+        #threecx {
+            text-align: right;
+            position: relative;
+            right: 15px;
+            top: 5px;
+            color: white;
+        }
+        #sofia-top {
+            background-color: $primary-color;
+            img {
+                border-radius: 50%;
+                border: 1px solid $primary-color;
+                padding: 2px;
+                margin-bottom: -30px;
+                width: 35%;
+                height: 35%;
+            }
+        }
+        h1 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #sofia-fields {
+            text-align: left;
+            padding: 5%;
+            input {
+                border: none;
+                border-bottom: 1px solid black;
+                margin-bottom: 5px;
+            }
+            #sofia-required {
+                font-size: 12px;
+            }
+        }
+    }
+
+
+    #sofia-required {
+        color: red;
+    }
+
+
+    #sofia-submit {
+        width: 100%;
+        margin-top: 50px;
+        border: none;
+        background: #494949;
+        color: white;
+        vertical-align: middle;
+        font-size: 20px;
+        span {
+            padding-top: 10px;
+            top: 20px;
+            vertical-align: bottom;
+        }
+    }
+
+
+    #sticky-sofia {
+        position: sticky;
+    }
 
  
