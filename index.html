@@ -17,14 +17,22 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <!-- Google Fonts --><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
     <link href="dist/hamburgers.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
 </head>
 
 <body style="background-color: rgba(0,0,0,.05);">
-    <div class="container" id="top_nav">
-        <div class="nav-buttons">
-        <img src="assets/images/f-logo.webp" class="f-logo" width="214.594px" height="37.359px" alt="Netmatters logo">
+    <div class="container" id="top_nav" class="sticky">
+        <div id="nav-buttons">
+        <img src="assets/images/f-logo.webp" class="f-logo" alt="Netmatters logo">
 
-            <a href="tel:--------" style="font-size:32px"><span class="material-symbols-outlined">phone_in_talk</span></a>
+            <a href="tel:--------" style="font-size:32px" id="phone-button"><span class="material-symbols-outlined">phone_in_talk</span></a>
+            <div id="search-box2">
+                <form action="" method="post">
+                    <input id="search-box2-input" type="text" placeholder="Search..." search></input>
+                </form>
+                <button id="search-box2-icon" class="material-symbols-outlined">search</button>
+            </div>
             <button style="font-size:32px" onclick="opensidebar()" id="sidebar-button-open"><span class="material-symbols-outlined">menu</span>
             <button style="font-size:32px" onclick="closesidebar()" id="sidebar-button-close"><span class="material-symbols-outlined">close</span></button>
         </div>
@@ -33,6 +41,7 @@
         <form action="" method="post" class="search-box" >
             <input type="text" placeholder="Search..." class="container"><span class="material-symbols-outlined">search</span></input>
         </form>
+
 
     </div>
     
@@ -45,13 +54,13 @@
 
 
 
-    <div class="cover-img" alt="">
+    <div id="cover-img" alt="">
         <div class="cover-img-transparency">
           
           
           
             <div id="bespoke-software-card">
-                <h1><br>Bespoke<br>Software</h1>
+                <h1><br>Bespoke<br class="bespoke-break"> Software</h1>
                 <h2>Delivering expert bespoke software solutions<br> across a range of industries<h2>
                 <br>
                 <br>
@@ -71,62 +80,74 @@
         </div>
     </div>
 
+
+    
     <br>
-    <h1 class="container" id="our-services">Our Services</h1>
+    <div class="our-services-latest-news" class="container">
+        <h1 class="container" id="our-services">Our Services</h1>
+        <a href="#" class="container" id="view-our-work2-arrow"><h1>View Our Work<span class="material-symbols-outlined" >arrow_forward</span></h1></a>
+    </div>
     <br>
+
+
+
     <div class="container">
-        <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="bespoke-card">
-            <span class="material-symbols-outlined">laptop_windows</span>
-            <h2>Bespoke Software</h2>
-            <small>Bespoke software solutions for all your business needs including integrations and reporting.</small>
-            <a href="#">READ MORE</a>
+        <div id="three-cards">
+            <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="bespoke-card">
+                <span class="material-symbols-outlined">laptop_windows</span>
+                <h2>Bespoke Software</h2>
+                <small>Bespoke software solutions for all your business needs including integrations and reporting.</small>
+                <a href="#">READ MORE</a>
+            </div>
+            
+            <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="it-support-card">
+                <span class="material-symbols-outlined">desktop_windows</span>
+                <h2>IT Support</h2>
+                <small>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</small>
+                <a href="#">READ MORE</a>
+            </div>
+            
+            <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="digital-marketing-card">
+                <span class="material-symbols-outlined">stacked_bar_chart</span>
+                <h2>Digital Marketing</h2>
+                <small>Driven brand awareness &amp; ROI through creative digital marketing campaigns.</small>
+                <a href="#">READ MORE</a>
+            </div>
         </div>
         
-        <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="it-support-card">
-            <span class="material-symbols-outlined">desktop_windows</span>
-            <h2>IT Support</h2>
-            <small>Fully managed IT support and consultancy packages tailored to meet your exact business needs.</small>
-            <a href="#">READ MORE</a>
-        </div>
-        
-        <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="digital-marketing-card">
-            <span class="material-symbols-outlined">stacked_bar_chart</span>
-            <h2>Digital Marketing</h2>
-            <small>Driven brand awareness &amp; ROI through creative digital marketing campaigns.</small>
-            <a href="#">READ MORE</a>
-        </div>
-        
-        <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="telecoms-card">
-            <span class="material-symbols-outlined">phone_in_talk</span>
-            <h2>Telecoms Services</h2>
-            <small>Business telephony solutions, including mobile &amp; connectivty solutions.</small>
-            <a href="#">READ MORE</a>
-        </div>
-        
-        <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="web-design-card">
-            <span class="material-symbols-outlined">code</span>
-            <h2>Web Design</h2>
-            <small>User-centric design for businesses looking to make a lasting impression.</small>
-            <a href="#">READ MORE</a>
-        </div>
-        
-        <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="cyber-security-card">
-            <span class="material-symbols-outlined">security</span>
-            <h2>Cyber Security</h2>
-            <small>Prevention, testing, consultancy &amp; breach management services.</small>
-            <a href="#">READ MORE</a>
-        </div>
-        
-        <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="developer-training-card">
-            <span class="material-symbols-outlined">school</span>
-            <h2>Developer Training</h2>
-            <small>Web design &amp; software training courses designed to secure a job in tech.</small>
-            <a href="#">READ MORE</a>
+        <div id="four-cards">
+            <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="telecoms-card">
+                <span class="material-symbols-outlined">phone_in_talk</span>
+                <h2>Telecoms Services</h2>
+                <small>Business telephony solutions, including mobile &amp; connectivty solutions.</small>
+                <a href="#">READ MORE</a>
+            </div>
+            
+            <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="web-design-card">
+                <span class="material-symbols-outlined">code</span>
+                <h2>Web Design</h2>
+                <small>User-centric design for businesses looking to make a lasting impression.</small>
+                <a href="#">READ MORE</a>
+            </div>
+            
+            <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="cyber-security-card">
+                <span class="material-symbols-outlined">security</span>
+                <h2>Cyber Security</h2>
+                <small>Prevention, testing, consultancy &amp; breach management services.</small>
+                <a href="#">READ MORE</a>
+            </div>
+            
+            <div href="javascript:setTimeout(()=>{window.location = '#' },1500);" class="card-services" id="developer-training-card">
+                <span class="material-symbols-outlined">school</span>
+                <h2>Developer Training</h2>
+                <small>Web design &amp; software training courses designed to secure a job in tech.</small>
+                <a href="#">READ MORE</a>
+            </div>
         </div>
     </div>
 
     <div class="container" id="view-container">
-        <a href="#">View Our Work<span class="material-symbols-outlined" id="view-our-work-arrow" >arrow_forward</span></a>
+        <a href="#" id="view-our-work">View Our Work<span class="material-symbols-outlined" id="view-our-work-arrow" >arrow_forward</span></a>
         <br>
 
     </div>
@@ -159,6 +180,7 @@
         <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
         <br>
         <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
+        <div id="why-choose-us-buttons">
         <div class="button-primary">
             <a href="">WHY CHOOSE US?<span class="material-symbols-outlined">arrow_forward</span></a>
         </div>   
@@ -166,79 +188,109 @@
         <div class="button-primary">
             <a href="">OUR CULTURE<span class="material-symbols-outlined">arrow_forward</span></a>
         </div>
+        </div>
         <h1>What Our Clients Think</h1>
         <br>
         <span class="material-symbols-outlined" id="stars">kid_starkid_starkid_starkid_starkid_star</span>
         <br>
         <br>
         <p><span id="quote">Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</span><p>
-        <p><span id="quote-author">Eleanor Bishop, Head of Marketing - 
+        <p><span id="quote-author">Eleanor Bishop, Head of Marketing -    <a href="#">Ashcroft Partnership LLP</a></span></p>
         <br>
-        <a href="#">Ashcroft Partnership LLP</a></span></p>
-        <br>
+        <div id="reviews">
         <a href="#" class="button" id="google">GOOGLE REVIEWS<span class="material-symbols-outlined">arrow_forward</span></a>
         <br>
         <br>
         <br>
         <a href="#" class="button" id="trustpilot">TRUSTPILOT REVIEWS<span class="material-symbols-outlined">arrow_forward</span></a>
+        </div>
     </div>
 
 
 
-
+    </bold></h1>
+    <div class="our-services-latest-news" class="container">
+        <h1 class="container" id="latest-news"><bold>Latest News</bold></h1>
+        <a href="#" class="container" id="view-all-arrow"><h1>View All<span class="material-symbols-outlined" >arrow_forward</span></h1></a>
+    </div>
+    <br>
+    <br>
 
     <div class="container" id="news-section">
-        <h1><bold>Latest News</bold></h1>
-        <br>
-        <br>
+
         
         
         
-        
-        <div class="card-news" id="coalition">
-            <div class="img-container">
-                <a href="#" class="news-button">NEWS</a>
-                <img class="news-photo" src="assets/images/scion-coalition-scheme-Ody3.webp">
+        <div id="two-cards">
+            <div class="card-news" id="coalition">
+                <div class="img-container">
+                    <a href="#" class="news-button">NEWS</a>
+                    <img class="news-photo" src="assets/images/scion-coalition-scheme-Ody3.webp">
+                </div>
+                <h2><strong>Scion Coalition Scheme Trainee Web Developer</strong></h2>
+                <p>Salary Range £22,000 per annum Hours 40 Location Wymondham, Norfolk. Flexible working hours and part...</p>
+                <a href="#" class="button" class="button-developer-training">READ MORE</a>
+                <div class="poster">
+                    <img src="assets/images/rebecca-moore-1fh7.webp" class="avatar">
+                    <div class="poster-text">
+                        <p><strong>Posted by Rebecca Moore</strong><br>5nd January 2024</p>
+                    
+                </div>
+                </div>
             </div>
-            <div class="container">
-            <h2><strong>Scion Coalition Scheme Trainee Web Developer</strong></h2>
-            <p>Salary Range £22,000 per annum Hours 40 Location Wymondham, Norfolk. Flexible working hours and part...</p>
-            <a href="#" class="button" class="button-developer-training">READ MORE</a>
-            <div class="poster">
-                <img src="assets/images/rebecca-moore-1fh7.webp" class="avatar">
-                <div class="poster-text">
-                    <p><strong>Posted by Rebecca Moore</strong><br>5nd January 2024</p>
+            
+
+
+
+            <div class="card-news" id="ambulance">
+                <div class="img-container">
+                    <a href="#" class="news-button">NEWS</a>
+                    <img class="news-photo" src="assets/images/east-anglian-air-1pHi.webp">
+                </div>
+
+                <h3>
+                    <strong>East Anglian Air Ambulance - Introducing a 3C... </strong>
+                    <span class="minute-read">
+                        - 4 minute read
+                    </span>
+                </h3>
+                    <p>The Client Championing ‘Your Local Life-Saving Charity’ the East Anglian Air Ambulance (EAAA) is a r...</p>
+                <a href="#" class="button" class="button-developer-training">READ MORE</a>
+                <div class="poster">
+                    <img src="assets/images/netmatters-ltd-VXAv.webp" class="avatar">
+                    <div class="poster-text">
+                        <p><strong>Posted by Netmatters</strong><br>15th December 2023</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+
+            <div class="card-news" id="jamie">
+                <div class="img-container">
+                    <a href="#" class="news-button">NEWS</a>
+                    <img class="news-photo" src="assets/images/jamie-slater-DJvi.webp">
+                </div>
+                <div class="container">
+                <h3>
+                <strong>Jamie Slater - Netmatters 5 Year Legend</strong>
+                    <span class="minute-read">
+                        - 3 minute read
+                    </span>
+                </h3>
+                <p>Today, we celebrate the brilliant accomplishments of Jamie Slater as he receives the Netmatters Long...</p>
+                <a href="#" class="button" class="button-developer-training">READ MORE</a>
+                <div class="poster">
+                    <img src="assets/images/netmatters-ltd-VXAv.webp" class="avatar">
+                    <div class="poster-text">
+                        <p><strong>Posted by Netmatters</strong><br>2nd January 2024</p>
+                    </div>
+    
                 </div>
             </div>
             </div>
         </div>
-
-
-
-
-        <div class="card-news" id="ambulance">
-            <div class="img-container">
-                <a href="#" class="news-button">NEWS</a>
-                <img class="news-photo" src="assets/images/east-anglian-air-1pHi.webp">
-            </div>
-            <div class="container">
-            <h3>
-                <strong>East Anglian Air Ambulance - Introducing a 3C... </strong>
-                <span class="minute-read">
-                    - 4 minute read
-                </span>
-            </h3>
-                <p>The Client Championing ‘Your Local Life-Saving Charity’ the East Anglian Air Ambulance (EAAA) is a r...</p>
-            <a href="#" class="button" class="button-developer-training">READ MORE</a>
-            <div class="poster">
-                <img src="assets/images/netmatters-ltd-VXAv.webp" class="avatar">
-                <div class="poster-text">
-                    <p><strong>Posted by Netmatters</strong><br>15th December 2023</p>
-                </div>
-            </div>
-            </div>
         </div>
-
 
 
 
@@ -246,40 +298,32 @@
         
         
 
-        <div class="card-news" id="jamie">
-            <div class="img-container">
-                <a href="#" class="news-button">NEWS</a>
-                <img class="news-photo" src="assets/images/jamie-slater-DJvi.webp">
-            </div>
-            <div class="container">
-            <h3>
-            <strong>Jamie Slater - Netmatters 5 Year Legend</strong>
-                <span class="minute-read">
-                    - 3 minute read
-                </span>
-            </h3>
-            <p>Today, we celebrate the brilliant accomplishments of Jamie Slater as he receives the Netmatters Long...</p>
-            <a href="#" class="button" class="button-developer-training">READ MORE</a>
-            <div class="poster">
-                <img src="assets/images/netmatters-ltd-VXAv.webp" class="avatar">
-                <div class="poster-text">
-                    <p><strong>Posted by Netmatters</strong><br>2nd January 2024</p>
-                </div>
 
-            </div>
-        </div>
-        </div>
-    </div>
 
 
 
     <div class=container id="view-container2">
-        <a href="#">View All<span class="material-symbols-outlined" id="view-our-work-arrow" >arrow_forward</span></a>
+        <a href="#" id="view-all">View All<span class="material-symbols-outlined" id="view-our-work-arrow" >arrow_forward</span></a>
         <br>
         <br>
         <br>
         <br>
-        <img src="assets/images/norfolk_prohelp_bw.webp"> 
+        <div id="view-our-work-carousel">
+            <img src="assets/images/black_swan_logo.webp"> 
+            <img src="assets/images/xupes_logo.webp"> 
+            <img src="assets/images/beat_logo.webp"> 
+            <img src="assets/images/survey_solutions_logo.webp"> 
+            <img src="assets/images/girl_guides_anglia_logo.webp">
+            <img src="assets/images/sweetzy_logo.webp">
+            <img src="assets/images/howespercivallogo.webp">
+            <img src="assets/images/girls_day_school_trust_logob.webp">
+            <img src="assets/images/ashcroftlogo_landscape_goldblack_DP60P-small.webp">
+            <img src="assets/images/onetravellerlogo_white_figuire.webp">
+            <img src="assets/images/searles_logo.webp">
+            <img src="assets/images/busseys_logo.webp">
+            <img src="assets/images/crane_logo.webp">
+        </div>
+
     </div>
 
 
@@ -291,20 +335,21 @@
         <input type="text" id="name" name="name"><br>
         <label for="email">Email<span class="required">*</span></label></br>
         <input type="text" id="email" name="email"><br>
-        <label id="custom-checkbox">
-                <span class="media-left">
-                    <span class="checkbox-button">
-                        <input name="email-checkbox" type="checkbox" value="1">
-                        <span id="checkmark"></span>
-                    </span>
-                </span>
-                <span class="media-body">
-                <br>
+        <br>
+        <div class="checkbox-wrapper-21" class="media-left" id="checkbox-left">
+            <label class="control control--checkbox">
+              <input type="checkbox">
+              <div class="control__indicator"></div>
+            </label>
+        </div>
+        <div class="email-signup-policy">
                 Please tick this box if you wish to receive marketing information from us.
                 Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.
-                </span>
-            </span>
-    </label>
+                
+        </div>
+        <br>
+        <br>
+        <a href="#" id="subscribe">SUBSCRIBE</a>
           
 
     </form>
@@ -350,243 +395,680 @@
     
     
     
-    <div class="about-section">
-        <h4>ABOUT NETMATTERS</h4>
+    <div id="about-section">
         
-        <ul>
-            <li class=" "><a href="https://www.netmatters.co.uk/news">News</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/our-careers">Our Careers</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/team">Our Team</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/contact-us">Contact Us</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/privacy-policy">Privacy Policy</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/cookie-policy">Cookie Policy</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/data-retention-disposal-policy">Data Retention &amp; Disposal Policy</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/cctv-policy">CCTV Policy</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/our-culture/environmental-policy">Environmental Policy</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/terms-and-conditions">Terms &amp; Conditions</a></li>
-            <br>
-        </ul>
 
-        <h4>OUR SERVICES</h4>
+        <div id="about-card">
+            <h4>ABOUT NETMATTERS</h4>
+            
+            <ul>
+                <li class=" "><a href="https://www.netmatters.co.uk/news">News</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/our-careers">Our Careers</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/team">Our Team</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/contact-us">Contact Us</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/privacy-policy">Privacy Policy</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/cookie-policy">Cookie Policy</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/data-retention-disposal-policy">Data Retention &amp; Disposal Policy</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/cctv-policy">CCTV Policy</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/our-culture/environmental-policy">Environmental Policy</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/terms-and-conditions">Terms &amp; Conditions</a></li>
+                <br>
+            </ul>
+        </div>
 
-        <ul>
-            <li class=" "><a href="https://www.netmatters.co.uk/news">Bespoke Software</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/our-careers">IT Support</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/team">Digital Marketing</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/contact-us">Telecoms Services</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/privacy-policy">Web Design</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/cookie-policy">Cyber Security</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/data-retention-disposal-policy">Developer Training</a></li>
-            <br>
-        </ul>
+        <div id="about-card">
+            <h4>OUR SERVICES</h4>
 
-        <h4>OUR INDUSTRIES</h4>
+            <ul>
+                <li class=" "><a href="https://www.netmatters.co.uk/news">Bespoke Software</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/our-careers">IT Support</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/team">Digital Marketing</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/contact-us">Telecoms Services</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/privacy-policy">Web Design</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/cookie-policy">Cyber Security</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/data-retention-disposal-policy">Developer Training</a></li>
+                <br>
+            </ul>
+        </div>    
 
-        <ul>
-            <li class=" "><a href="https://www.netmatters.co.uk/news">Financial Services</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/our-careers">Construction</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/team">Retail &amp; E-Commerce</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/contact-us">Non-Profits</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/privacy-policy">SME's</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/cookie-policy">Healthcare</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/data-retention-disposal-policy">Education &amp; Training</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/cctv-policy">Travel &amp; Leisure</a></li>
-            <br>
-        </ul>
+        <div id="about-card">
 
-        <h4>LOCATIONS</h4>
+            <h4>OUR INDUSTRIES</h4>
 
-        <ul>
-            <li class=" "><a href="https://www.netmatters.co.uk/news">London Office</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/our-careers">Cambridge Office</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/team">Wymondham Office</a></li>
-            <li class=" "><a href="https://www.netmatters.co.uk/contact-us">Great Yarmouth Office</a></li>
-            <br>
-            <br>
-        </ul>
+            <ul>
+                <li class=" "><a href="https://www.netmatters.co.uk/news">Financial Services</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/our-careers">Construction</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/team">Retail &amp; E-Commerce</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/contact-us">Non-Profits</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/privacy-policy">SME's</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/cookie-policy">Healthcare</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/data-retention-disposal-policy">Education &amp; Training</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/cctv-policy">Travel &amp; Leisure</a></li>
+                <br>
+            </ul>
+        </div>
 
+        <div id="about-card">
+            <h4>LOCATIONS</h4>
+
+            <ul>
+                <li class=" "><a href="https://www.netmatters.co.uk/news">London Office</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/our-careers">Cambridge Office</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/team">Wymondham Office</a></li>
+                <li class=" "><a href="https://www.netmatters.co.uk/contact-us">Great Yarmouth Office</a></li>
+                <br>
+                <br>
+            </ul>
+        </div>
     </div>
-
-
 </main>
 
-    <footer class="container">
-        <br>
-        <p>© Copyright Netmatters 2024.<br>All rights reserved<br>Sitemap</p>
-    </footer>
-    
+<footer class="container">
+    <br>
+    <p>© Copyright Netmatters 2024. <br>All rights reserved <br><i> - </i>Sitemap</p>
+</footer>
+
+
+
+
+
+
+
+
+
+
+<div id="sidebar">
+  
+    <div id="above-submenu">
+        <a href="#" class="submenu-heading" id="contact-us-sidebar"><p>Contact Us</p></a>
+        <div class="submenu-heading">
+            <a href="#"><span class="material-symbols-outlined">computer</span><br><small>Bespoke</small><br><p>Software</p></a>
+        </div>
+
+        <ul class="submenu-items-group">
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">BESPOKE CRM</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">BUSINESS AUTOMATION</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">SOFTWARE INTEGRATIONS</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">MOBILE APP DEVELOPMENT</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">BESPOKE DATABASES</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">SHAREPOINT DEVELOPMENT</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">OPERATIONAL SYSTEMS</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">BUSINESS CENTRAL IMPLEMENTATION</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">INTERNET OF THINGS (IOT) SOFTWARE</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">INTRANET DEVELOPMENT</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">CUSTOMER PORTAL DEVELOPMENT</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">REPORTING HUB</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="submenu-heading">
+            <a href="#"><span class="material-symbols-outlined">computer</span><br><small>IT</small><br><p>SUPPORT</p></a>
+        </div>
+
+
+        <ul class="submenu-items-group">
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">MANAGED IT SUPPORT</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">BUSINESS IT SUPPORT</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">OFFICE 365 FOR BUSINESS</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">IT CONSULTANCY</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">CLOUD SERVICE PROVIDER</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">DATA BACKUP & DISASTER RECOVERY</span>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="submenu-heading">
+            <a href="#"><span class="material-symbols-outlined">computer</span><br><small>DIGITAL</small><br><p>MARKETING</p></a>
+        </div>
+
+        <ul class="submenu-items-group">
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">SEARCH ENGINE OPTIMISATION (SEO)</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">PAY PER CLICK ADVERTISING (PPC)</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">CONVERSION RATE OPTIMISATION (CRO)</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">EMAIL MARKETING</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">SOCIAL MEDIA MARKETING</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">CONTENT MARKETING</span>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="submenu-heading">
+            <a href="#"><span class="material-symbols-outlined">computer</span><br><small>TELECOMS</small><br><p>SERVICES</p></a>
+        </div>
+
+        <ul class="submenu-items-group">
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">BUSINESS MOBILE</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">HOSTED VOIP PROVIDER</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">BUSINESS VOIP SYSTEMS</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">BUSINESS BROADBAND</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">LEASED LINES PROVIDER</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">3CX SYSTEMS</span>
+                </a>
+        </ul>
+
+        <div class="submenu-heading">
+            <a href="#"><span class="material-symbols-outlined">computer</span><br><small>WEB</small><br><p>DESIGN</p></a>
+        </div>
+
+        <ul class="submenu-items-group">
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">BESPOKE WEBSITE DESIGN</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">ECOMMERCE WEBSITE DESIGN</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">PAY MONTHLY WEBSITES</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">BRANDING & DESIGN</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">MOBILE APP DEVELOPMENT</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">WEB HOSTING</span>
+                </a>
+        </ul>
+
+
+        <div class="submenu-heading">
+            <a href="#"><span class="material-symbols-outlined">computer</span><br><small>CYBER</small><br><p>SECURITY</p></a>
+        </div>
+
+        <ul class="submenu-items-group">
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">CYBER SECURITY ASSESSMENT</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">CYBER SECURITY MANAGEMENT</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">CYBER PENETRATION TESTING</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">CYBER ESSENTIALS CERTIFICATION</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">PCI COMPLIANCE</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                <span class="sidebar-text">HACKING PREVENTION</span>
+                </a>
+        </ul>
+
+
+
+        <div class="submenu-heading">
+            <a href="#"><span class="material-symbols-outlined">computer</span><br><small>DEVELOPER</small><br><p>COURSE</p></a>
+        </div>
 
     
     
-    
-    
-    
-    
-    
-    
-    <div id="sidebar">
-        <a href="https://www.netmatters.co.uk/contact-us">Contact Us</a>
-        <a href="https://www.netmatters.co.uk/contact-us">Bespoke Software</a>
-        <a href="https://www.netmatters.co.uk/contact-us">Contact Us</a>
-        <ul class="submenu-items-group1">
+        <ul class="submenu-items-group">
             <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">BESPOKE CRM</span>
+                <a href="#">
+                <span class="sidebar-text">TRAIN FOR A CAREER IN TECH</span>
                 </a>
             </li>
             <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">BUSINESS AUTOMATION</span>
+                <a href="#">
+                <span class="sidebar-text">SKILLS BOOTCAMP</span>
                 </a>
             </li>
             <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">SOFTWARE INTEGRATIONS</span>
+                <a href="#">
+                <span class="sidebar-text">SCION SCHEME FREQUENTLY ASKED QUESTIONS</span>
                 </a>
             </li>
             <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">MOBILE APP DEVELOPMENT</span>
-                </a>
-            </li>
-            <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">BESPOKE DATABASES</span>
-                </a>
-            </li>
-            <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">SHAREPOINT DEVELOPMENT</span>
-                </a>
-            </li>
-            <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">OPERATIONAL SYSTEMS</span>
-                </a>
-            </li>
-            <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">BUSINESS CENTRAL IMPLEMENTATION</span>
-                </a>
-            </li>
-            <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">BESPOKE CRM</span>
-                </a>
-            </li>
-            <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">BUSINESS AUTOMATION</span>
-                </a>
-            </li>
-            <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">SOFTWARE INTEGRATIONS</span>
-                </a>
-            </li>
-            <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">MOBILE APP DEVELOPMENT</span>
-                </a>
-            </li>
-            <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">BESPOKE DATABASES</span>
-                </a>
-            </li>
-            <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">SHAREPOINT DEVELOPMENT</span>
-                </a>
-            </li>
-            <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">OPERATIONAL SYSTEMS</span>
-                </a>
-            </li>
-            <li class="submenu-items">
-                <a href="https://www.netmatters.co.uk/web-design/mobile-app-development">
-                <span class="sidebar-text">BUSINESS CENTRAL IMPLEMENTATION</span>
+                <a href="#">
+                <span class="sidebar-text">SCION COLLABORATORS</span>
                 </a>
             </li>
         </ul>
     </div>
-    
-    <button id="manage-consent" class="sticky" onclick="openConsent()">Manage Consent</button>
 
-    <button id="chat-symbol" class="sticky" onclick="openSofia()"><span class="material-symbols-outlined">comment</button></span>
+    <div id="below-submenu">
+        <ul>
+            <a href="#" class="sidebar-heading">OUR WORK</span></a>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">CASE STUDIES</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">OUR DIGITAL MARKETING CLIENTS</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">OUR WEBSITE CLIENTS</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">OUR IT CLIENTS</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">OUR BESPOKE SOFTWARE CLIENTS</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">OUR TELECOMS CLIENTS</span>
+                </a>
+            </li>
+
+
+
+            <a href="#" class="sidebar-heading">OUR KNOWLEDGE</span></a>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">TECHNOLOGIES</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">INDUSTRIES</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">NEWS</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">INSIGHTS</span>
+                </a>
+            </li>
+
+
+
+
+
+
+
+
+            <a href="#" class="sidebar-heading">TRAINING</span></a>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">TRAIN FOR A CAREER IN TECH</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">SKILLS BOOTCAMP</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">SCS FREQUENTLY ASKED QUESTIONS</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">SCION COLLABORATORS</span>
+                </a>
+            </li>
+            <a href="#" class="sidebar-heading">OUR COMPANY</span></a>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">WHY CHOOSE US?</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">OUR CULTURE</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">OUR TEAM</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">OUR CAREERS</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">OUR BENEFITS</span>
+                </a>
+            </li>
+            <a href="#" class="sidebar-heading">CONTACT US</span></a>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">LONDON OFFICE</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">CAMBRIDGE OFFICE</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">WYMONDHAM OFFICE</span>
+                </a>
+            </li>
+            <li class="submenu-items">
+                <a href="#">
+                    <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
+                    <span class="sidebar-text">GREAT YARMOUTH OFFICE</span>
+                </a>
+            </li>
+            <a href="#" class="sidebar-heading">COVID RISK ASSESSMENTS</span></a>
+            <a href="#" class="sidebar-heading">SUPPORT</span></a>
+        </ul>
         
-    <button id="chat-symbol-open" class="sticky" onclick="closeSofia()"><span class="material-symbols-outlined">expand_more</button></span>
+    </div>
+
+
+</div>
+
+<button id="manage-consent" class="sticky" onclick="openCookies()">Manage Consent</button>
+
+<button id="chat-symbol" class="sticky" onclick="openSofia()"><span class="material-symbols-outlined">comment</button></span>
     
-    <script>
-        function opensidebar() {
-          document.getElementById("sidebar").style.width = "25%";
-          document.getElementById("sidebar").style.display = "block";
-          document.getElementById("sidebar-button-open").style.display = 'none';
-          document.getElementById("sidebar-button-close").style.display = "inline-block";
-        }
-        function closesidebar() {
-          document.getElementById("sidebar").style.display = "none";
-          document.getElementById("sidebar-button-open").style.display = "inline-block";
-          document.getElementById("sidebar-button-close").style.display = "none";
-        }
-        </script>
+<button id="chat-symbol-open" class="sticky" onclick="closeSofia()"><span class="material-symbols-outlined">expand_more</button></span>
 
-    <script>
-        function openSofia() {
-        document.getElementById("sofia-popup").style.display = "block";
-        document.getElementById("sofia-popup").style.position = "sticky";
-        document.getElementById("chat-symbol").style.display = 'none';
-        document.getElementById("chat-symbol-open").style.display = "inline-block";
-        }
-        function closeSofia() {
-        document.getElementById("sofia-popup").style.display = "none";
-        document.getElementById("chat-symbol").style.display = "inline-block";
-        document.getElementById("chat-symbol-open").style.display = "none";
-        }
-    </script>
-
-
-
-    <script>
-        function openConsent() {
-        document.getElementById("sidebar").style.width = "25%";
+<script>
+    function opensidebar() {
         document.getElementById("sidebar").style.display = "block";
-        }
+        document.getElementById("sidebar-side").style.display = "block";
+        document.getElementById("sidebar").style.position = "fixed";
+        document.getElementById("sidebar-button-open").style.display = 'none';
+        document.getElementById("sidebar-button-close").style.display = "inline-block";
 
-
+    }
+    function closesidebar() {
+        document.getElementById("sidebar").style.display = "none";
+        document.getElementById("sidebar-side").style.display = "none";
+        document.getElementById("sidebar-button-open").style.display = "inline-block";
+        document.getElementById("sidebar-button-close").style.display = "none";
+    }
     </script>
 
+<script>
+    function openSofia() {
+    document.getElementById("sofia-popup").style.display = "block";
+    document.getElementById("chat-symbol").style.display = 'none';
+    document.getElementById("greeting").style.display = 'none';
+    document.getElementById("chat-symbol-open").style.display = "inline-block";
+    }
+    function closeSofia() {
+    document.getElementById("sofia-popup").style.display = "none";
+    document.getElementById("greeting").style.display = "none";
+    document.getElementById("chat-symbol").style.display = "inline-block";
+    document.getElementById("chat-symbol-open").style.display = "none";
+    }
+</script>
 
 
-    <div class="container" id="sofia-popup">
-        <div id="sticky-sofia">
-            <div id="sofia-top">
-                <p id="threecx">Powered by 3CX</p>
-                <img src="assets/images/sofia.svg" alt="avatar">
-            </div>
-                <br>
-                <h1>Sofia</h1>
-                <br>
-                <br>
-                <br>
-                
-            <div id="sofia-fields">
-                <p>Could we have your name, please?</p>
-                <input placeholder="Name" autocomplete="false" maxlength="50" type="text"> 
-                <p id="sofia-required">Required field</p>
-            </div> 
 
-                <button id="sofia-submit">
-                    <p><span class="material-symbols-outlined">Chat</span>Chat</p>
-                    
-                </button>
-            </div>
-        </div>
+</script>
+
+<script>
+    function required() {
+    document.getElementById("sofia-required").style.display = "block";
+    }
+</script>
+
+
+<script>
+    function openCookies() {
+    document.getElementById("cookie-policy").style.display = "block";
+    }
+    function acceptCookies() {
+    document.getElementById("cookie-policy").style.display = "none";
+    }
+</script>
+
+<div class="container" id="cookie-policy">
+    <h3>Cookies Policy</h3>
+    <hr>
+    <p>Our website uses cookies. This helps us provide you with a good experience on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on "<a href="#">Privacy Policy</a>" otherwise click "Accept Cookies" to enter.</p>
+    <hr>
+    <div id="cookie-buttons">
+        <a href="#" id="change-settings">CHANGE SETTINGS</a>
+         <a href="#" id="accept-cookies" onclick="acceptCookies()" >ACCEPT COOKIES</a>
+    </div>
+    
 </div>
 
 
+
+<div id="sidebar-side" onclick="closesidebar()">
+</div>
+
+
+
+
+
+
+
+
+<div class="container" id="sofia-popup">
+    <div id="sticky-sofia">
+        <div id="sofia-top">
+            <p id="threecx">Powered by 3CX</p>
+            <img src="assets/images/sofia.svg" alt="avatar">
+        </div>
+            <br>
+            <h1>Sofia</h1>
+            <br>
+            <br>
+            <br>
+            
+        <div id="sofia-fields">
+            <p>Could we have your name, please?</p>
+            <input placeholder="Name" autocomplete="false" maxlength="50" type="text"> 
+            <p id="sofia-required">Required field</p>
+        </div> 
+
+            <button id="sofia-submit" onclick="required()">
+                <p><span class="material-symbols-outlined">Chat</span>Chat</p>
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div id="greeting" >
+    <img src="assets/images/sofia.svg" alt="avatar" onclick="openSofia()">
+    <p onclick="openSofia()">Hey, we're here to help!</p>
+    <span id="sofia-cross" onclick="closeSofia()" class="material-symbols-outlined">close</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
 
 </html>
 

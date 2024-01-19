@@ -1,0 +1,153 @@
+@media (max-width: 767px) {
+    #search-box2, #search-box2-icon {
+        display: none !important;
+    }
+    .f-logo {
+        width: 214.594px;
+        height: 37.359px;
+    }
+    #search-box2-input {
+        display: none;
+    }
+    #view-our-work2-arrow {
+        display: none !important;
+    }
+    #our-services {
+        position: relative;
+        right: 13%;
+    }
+    footer p i {
+        display: none;
+    }
+    #view-all-arrow {
+        display: none;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .container {
+        width:750px
+    }
+    .search-box {
+        display: none;
+    }
+    .f-logo {
+        width: auto !important;
+        height: auto;
+    }
+    #phone-button {
+        display: none;
+    }
+    #nav-buttons {
+        line-height: 0;
+        margin-bottom: -10px;
+        margin-right: 10px;
+    }
+    #search-box2, #search-box2-icon {
+        display: flex;
+    }
+    #our-services {
+        position: relative;
+        right: 0;
+    }
+
+    #four-cards {
+        display: grid;
+        grid-template-areas: 
+        "1 2"
+        "3 4";
+    }
+    #view-our-work {
+        display: none;
+    }
+    #why-choose-us-buttons, #reviews {
+        display: flex;
+        gap: 20px;
+    }
+    #jamie {
+        display: none;
+    }
+    #two-cards {
+        gap: 5%;
+        text-wrap: wrap;
+        display: flex;
+        }
+    #view-all {
+        display: none;
+        }
+    #view-container2 {
+        margin-top: -50px;
+    }
+    #sidebar-side {
+        width: 61% !important;
+    }
+    #sidebar {
+        width: 40% !important;
+    }
+    #information {
+        width: 100vw;
+        img {
+            width: 50%;
+        }
+        .socials {
+            display: flex;
+            gap: 10px;
+            .social-button {
+                padding: 20px 25px;
+            }
+        }
+        #about-section {
+            display: grid;
+            grid-template-areas: 
+            "1 2"
+            "3 4";
+        }
+    }
+    footer {
+        width: 100vw !important;
+        p br {
+        display: none;
+        }
+    }
+    #welcome-to-netmatters {
+        width: 100vw;
+    }
+    #bespoke-software-card .bespoke-break {
+        display: none;
+    }
+    #cookie-policy {
+        width: 80% !important;
+        right: 0;
+        bottom: 30%;
+        height: 45%;
+        margin: 0;
+        #cookie-buttons {
+            display: grid;
+            grid-template-areas: 
+            "1 1";
+            gap: 20px;
+            #accept-cookies {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .container {
+        width:970px
+    }
+    #three-cards {
+        display: flex;
+    }
+
+}
+
+@media (min-width: 1260px) {
+    .container {
+        width:1200px
+    }
+}
