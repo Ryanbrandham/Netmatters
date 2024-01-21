@@ -22,27 +22,57 @@
 </head>
 
 <body style="background-color: rgba(0,0,0,.05);">
-    <div class="container" id="top_nav" class="sticky">
-        <div id="nav-buttons">
-        <img src="assets/images/f-logo.webp" class="f-logo" alt="Netmatters logo">
-
-            <a href="tel:--------" style="font-size:32px" id="phone-button"><span class="material-symbols-outlined">phone_in_talk</span></a>
-            <div id="search-box2">
-                <form action="" method="post">
-                    <input id="search-box2-input" type="text" placeholder="Search..." search></input>
-                </form>
-                <button id="search-box2-icon" class="material-symbols-outlined">search</button>
+    <div>
+        <div class="container" id="top_nav" class="sticky">
+            <div id="nav-buttons">
+                <img src="assets/images/f-logo.webp" class="f-logo" alt="Netmatters logo">
+                <div id="support-contact">
+                    <div id="support-nav">
+                        <a href="#"><span class="material-symbols-outlined">mouse</span> SUPPORT</a>
+                    </div>
+                    <div id="contact-nav">
+                        <a href="#"><span class="material-symbols-outlined">send</span> CONTACT</a>
+                    </div>
+                </div>
+                <a href="tel:--------" style="font-size:32px" id="phone-button"><span class="material-symbols-outlined">phone_in_talk</span></a>
+                <div id="search-box2">
+                    <form action="" method="post">
+                        <input id="search-box2-input" type="text" placeholder="Search..." search></input>
+                    </form>
+                    <button id="search-box2-icon" class="material-symbols-outlined">search</button>
+                </div>
+                <button style="font-size:32px" onclick="opensidebar()" id="sidebar-button-open"><span class="material-symbols-outlined">menu</span>
+                <button style="font-size:32px" onclick="closesidebar()" id="sidebar-button-close"><span class="material-symbols-outlined">close</span></button>
             </div>
-            <button style="font-size:32px" onclick="opensidebar()" id="sidebar-button-open"><span class="material-symbols-outlined">menu</span>
-            <button style="font-size:32px" onclick="closesidebar()" id="sidebar-button-close"><span class="material-symbols-outlined">close</span></button>
+            <br>
+            <br>
+            <form action="" method="post" class="search-box" >
+                <input type="text" placeholder="Search..." class="container"><span class="material-symbols-outlined">search</span></input>
+            </form>
         </div>
-        <br>
-        <br>
-        <form action="" method="post" class="search-box" >
-            <input type="text" placeholder="Search..." class="container"><span class="material-symbols-outlined">search</span></input>
-        </form>
-
-
+        <div id="bottom_nav">
+            <div class="bottom-heading" id="bespoke-bottom-nav">
+                <a href="#"><span class="material-symbols-outlined" class="">computer</span><br><small>Bespoke</small><br><p>Software</p></a>
+            </div>
+            <div class="bottom-heading">
+                <a href="#"><span class="material-symbols-outlined">computer</span><br><small>Bespoke</small><br><p>Software</p></a>
+            </div>
+            <div class="bottom-heading">
+                <a href="#"><span class="material-symbols-outlined">computer</span><br><small>Bespoke</small><br><p>Software</p></a>
+            </div>
+            <div class="bottom-heading">
+                <a href="#"><span class="material-symbols-outlined">computer</span><br><small>Bespoke</small><br><p>Software</p></a>
+            </div>
+            <div class="bottom-heading">
+                <a href="#"><span class="material-symbols-outlined">computer</span><br><small>Bespoke</small><br><p>Software</p></a>
+            </div>
+            <div class="bottom-heading">
+                <a href="#"><span class="material-symbols-outlined">computer</span><br><small>Bespoke</small><br><p>Software</p></a>
+            </div>
+            <div class="bottom-heading">
+                <a href="#"><span class="material-symbols-outlined">computer</span><br><small>Bespoke</small><br><p>Software</p></a>
+            </div>
+        </div>
     </div>
     
 </body>
@@ -59,9 +89,9 @@
           
           
           
-            <div id="bespoke-software-card">
+            <div class="container" id="bespoke-software-card">
                 <h1><br>Bespoke<br class="bespoke-break"> Software</h1>
-                <h2>Delivering expert bespoke software solutions<br> across a range of industries<h2>
+                <h2>Delivering expert bespoke software solutions<br> across a range of industries
                 <br>
                 <br>
                 <br>
@@ -70,11 +100,11 @@
                 <a href="">FIND OUT MORE<span class="material-symbols-outlined">arrow_forward</span></a>                <br>
 
                 <br>
-                <br>            
+                <br>           
                 <br>
                 <br>
-                <br>
-                <br>
+                <br class="desktop-hidden">
+                <br class="desktop-hidden">
             </div>
        
         </div>
@@ -83,7 +113,7 @@
 
     
     <br>
-    <div class="our-services-latest-news" class="container">
+    <div id="our-services-latest-news" class="container">
         <h1 class="container" id="our-services">Our Services</h1>
         <a href="#" class="container" id="view-our-work2-arrow"><h1>View Our Work<span class="material-symbols-outlined" >arrow_forward</span></h1></a>
     </div>
@@ -169,43 +199,50 @@
 
 
     <div class="container" id="welcome-to-netmatters">
-        <h1><bold>Welcome To Netmatters</bold></h1>
-        <strong>Netmatters is a leading 
-        <a href="#">Bespoke Software</a>, 
-        <a href="#">IT Support</a>, and 
-        <a href="#">Digital Marketing</a> company based in the East of England with offices in 
-        <a href="#" target="_blank" rel="noopener noreferrer">London</a>,&nbsp;<a href="#">Cambridge</a>, 
-        <a href="#">Wymondham</a>, and <a href="#">Great Yarmouth</a>.</strong>
-        <br><br>
-        <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
-        <br>
-        <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
-        <div id="why-choose-us-buttons">
-        <div class="button-primary">
-            <a href="">WHY CHOOSE US?<span class="material-symbols-outlined">arrow_forward</span></a>
-        </div>   
-        <br>
-        <div class="button-primary">
-            <a href="">OUR CULTURE<span class="material-symbols-outlined">arrow_forward</span></a>
+        <div id="welcome-width">
+            <div class="container" id="welcome-first">
+                <h1><bold>Welcome To Netmatters</bold></h1>
+                <strong>Netmatters is a leading 
+                <a href="#">Bespoke Software</a>, 
+                <a href="#">IT Support</a>, and 
+                <a href="#">Digital Marketing</a> company based in the East of England with offices in 
+                <a href="#" target="_blank" rel="noopener noreferrer">London</a>,&nbsp;<a href="#">Cambridge</a>, 
+                <a href="#">Wymondham</a>, and <a href="#">Great Yarmouth</a>.</strong>
+                <br><br>
+                <p>We aren't tied into contracts with third-party providers, so you know that our recommendations for your business are based purely with one benefit in mind: to help improve your business with the most appropriate solutions.</p>
+                <br>
+                <p>We pride ourselves on being an ethical business and have a unique business offering and cost model that ensures you get the most from our relationship in an upfront manner.</p>
+                <div id="why-choose-us-buttons">
+                    <div class="button-primary">
+                        <a href="">WHY CHOOSE US?<span class="material-symbols-outlined">arrow_forward</span></a>
+                    </div>   
+                    <br>
+                    <div class="button-primary">
+                        <a href="">OUR CULTURE<span class="material-symbols-outlined">arrow_forward</span></a>
+                    </div>
+                </div>
+            
         </div>
-        </div>
-        <h1>What Our Clients Think</h1>
-        <br>
-        <span class="material-symbols-outlined" id="stars">kid_starkid_starkid_starkid_starkid_star</span>
-        <br>
-        <br>
-        <p><span id="quote">Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</span><p>
-        <p><span id="quote-author">Eleanor Bishop, Head of Marketing -    <a href="#">Ashcroft Partnership LLP</a></span></p>
-        <br>
-        <div id="reviews">
-        <a href="#" class="button" id="google">GOOGLE REVIEWS<span class="material-symbols-outlined">arrow_forward</span></a>
-        <br>
-        <br>
-        <br>
-        <a href="#" class="button" id="trustpilot">TRUSTPILOT REVIEWS<span class="material-symbols-outlined">arrow_forward</span></a>
+        
+        <div class="container" class="welcome-breakpoint">
+            <h1>What Our Clients Think</h1>
+            <br>
+            <span class="material-symbols-outlined" id="stars">kid_starkid_starkid_starkid_starkid_star</span>
+            <br>
+            <br>
+            <p><span id="quote">Netmatters stood out from the start. Great guys and very easy to work with. Both the build and digital marketing teams are clearly skilled -they know their stuff! They delivered a website to our (high!) expectations and went over and above to ensure we were satisfied clients - and we are!</span><p>
+            <p><span id="quote-author">Eleanor Bishop, Head of Marketing -    <a href="#">Ashcroft Partnership LLP</a></span></p>
+            <br>
+            <div id="reviews">
+                <a href="#" class="button" id="google">GOOGLE REVIEWS<span class="material-symbols-outlined">arrow_forward</span></a>
+                <br>
+                <br>
+                <br>
+                <a href="#" class="button" id="trustpilot">TRUSTPILOT REVIEWS<span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
         </div>
     </div>
-
+</div>
 
 
     </bold></h1>
@@ -218,10 +255,7 @@
 
     <div class="container" id="news-section">
 
-        
-        
-        
-        <div id="two-cards">
+         <div id="two-cards">
             <div class="card-news" id="coalition">
                 <div class="img-container">
                     <a href="#" class="news-button">NEWS</a>
@@ -234,8 +268,7 @@
                     <img src="assets/images/rebecca-moore-1fh7.webp" class="avatar">
                     <div class="poster-text">
                         <p><strong>Posted by Rebecca Moore</strong><br>5nd January 2024</p>
-                    
-                </div>
+                    </div>
                 </div>
             </div>
             
@@ -262,16 +295,16 @@
                         <p><strong>Posted by Netmatters</strong><br>15th December 2023</p>
                     </div>
                 </div>
-                </div>
             </div>
 
 
-            <div class="card-news" id="jamie">
-                <div class="img-container">
-                    <a href="#" class="news-button">NEWS</a>
-                    <img class="news-photo" src="assets/images/jamie-slater-DJvi.webp">
-                </div>
-                <div class="container">
+
+        <div class="card-news" id="jamie">
+            <div class="img-container">
+                <a href="#" class="news-button">NEWS</a>
+                <img class="news-photo" src="assets/images/jamie-slater-DJvi.webp">
+            </div>
+            <div class="container" id="jamie-bottom">
                 <h3>
                 <strong>Jamie Slater - Netmatters 5 Year Legend</strong>
                     <span class="minute-read">
@@ -285,14 +318,11 @@
                     <div class="poster-text">
                         <p><strong>Posted by Netmatters</strong><br>2nd January 2024</p>
                     </div>
-    
                 </div>
             </div>
-            </div>
         </div>
-        </div>
-
-
+    </div>
+</div>
 
 
         
@@ -330,75 +360,85 @@
 
     
     <form class="container" id="email-signup">
-        <h1>Email Newsletter Sign-Up</h1>
-        <label for="name">First Name<span class="required">*</span></label></br>
-        <input type="text" id="name" name="name"><br>
-        <label for="email">Email<span class="required">*</span></label></br>
-        <input type="text" id="email" name="email"><br>
-        <br>
-        <div class="checkbox-wrapper-21" class="media-left" id="checkbox-left">
-            <label class="control control--checkbox">
-              <input type="checkbox">
-              <div class="control__indicator"></div>
-            </label>
-        </div>
-        <div class="email-signup-policy">
-                Please tick this box if you wish to receive marketing information from us.
-                Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.
-                
-        </div>
-        <br>
-        <br>
-        <a href="#" id="subscribe">SUBSCRIBE</a>
-          
+        <div id="email-signup-middle">
+            <h1>Email Newsletter Sign-Up</h1>
+            <div id="form-breakpoint">
+                <div id="name">
+                    <label for="name">Your Name <span class="required">*</span></label>
+                    <input type="text" id="name" name="name"><br>
+                </div>
+                <div id="email">
+                    <label for="email">Your Email <span class="required">*</span></label>
+                    <input type="text" id="email" name="email"><br>
+                </div>
+            </div>
+            <br>
+            <div class="checkbox-wrapper-21" class="media-left" id="checkbox-left">
+                <label class="control control--checkbox">
+                <input type="checkbox">
+                <div class="control__indicator"></div>
+                </label>
+            </div>
+            <div class="email-signup-policy">
+                    Please tick this box if you wish to receive marketing information from us.
+                    Please see our <a href="#">Privacy Policy</a> for more information on how we keep your data safe.
+                    
+            </div>
+            <br>
+            <br>
+            <a href="#" id="subscribe">SUBSCRIBE</a>
+        </div>  
 
     </form>
 
     <div class="container" id="information">
-        <img src="assets/images/nm-logo-white-med.webp" id="follow-us-img">
-        <h4>FOLLOW US ON:</h4>
-        <br>
+        <div class="information-card">
+            <img src="assets/images/nm-logo-white-med.webp" id="follow-us-img">
+            <h4>FOLLOW US ON:</h4>
+            <br>
+                
             
+            <div class="socials">
+                <div class="facebook">
+                    <a class="social-button" href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                
+
+                <div class="linkedin">
+                    <a class="social-button" href="#">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                
+
+                <div class="twitter">
+                    <a class="social-button" href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                
+
+                <div class="instagram">
+                    <a class="social-button" href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
         
-        <div class="socials">
-            <div class="facebook">
-                <a class="social-button" style="background-color: #212330;" href="#">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </div>
-            
-
-            <div class="linkedin">
-                <a class="social-button" style="background-color: #212330;" href="#">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </div>
-            
-
-            <div class="twitter">
-                <a class="social-button" style="background-color: #212330;" href="#">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </div>
-            
-
-            <div class="instagram">
-                <a class="social-button" style="background-color: #212330;" href="#">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </div>
+            <br>
+            <br>
+            <br>
     
-    <br>
-    <br>
-    <br>
-    
-    
+        </div>   
+        
     
     <div id="about-section">
         
 
-        <div id="about-card">
+        
+        <div id="about-card" class="information-card">
             <h4>ABOUT NETMATTERS</h4>
             
             <ul>
@@ -416,7 +456,7 @@
             </ul>
         </div>
 
-        <div id="about-card">
+        <div id="about-card" class="information-card">
             <h4>OUR SERVICES</h4>
 
             <ul>
@@ -431,7 +471,7 @@
             </ul>
         </div>    
 
-        <div id="about-card">
+        <div id="about-card" class="information-card">
 
             <h4>OUR INDUSTRIES</h4>
 
@@ -448,7 +488,7 @@
             </ul>
         </div>
 
-        <div id="about-card">
+        <div id="about-card" class="information-card">
             <h4>LOCATIONS</h4>
 
             <ul>

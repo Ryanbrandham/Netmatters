@@ -183,7 +183,7 @@ html, body {
 }
 
 
-.our-services-latest-news {
+#our-services-latest-news {
     display: flex;
     font-size: 40px;
     font-weight: bold;
@@ -807,25 +807,40 @@ footer {
 
 .socials {
 
-        display: grid;
-        grid-template-areas: 
-        "facebook linkedin"
-        "twitter instagram";
-        grid-template-columns: 20%;
-        gap: 35px 40px;
-        .social-button {
-            padding: 20px 40px ;
-            background-color: #212330;
-            }
-            i {
-                position: relative;
-                width: 14px;
-                font-size: 30px;
-                right: 6px;
-                top: 5px;
+    display: grid;
+    grid-template-areas: 
+    "facebook linkedin"
+    "twitter instagram";
+    grid-template-columns: 20%;
+    gap: 35px 40px;
+    a {
+        background-color: #212330;
+    }
+    .social-button {
+        padding: 20px 40px;
+    }
+    i {
+            position: relative;
+            width: 14px;
+            font-size: 30px;
+            right: 6px;
+            top: 5px;
+    }
+    .facebook :hover {
+        background-color: #3b5998;
+    }
+    .linkedin :hover {
+        background-color: #0077b5;
+    }
+    .twitter :hover {
+        background-color: #00aced;
+    }
+    .instagram :hover {
+        background-color: #d93175;
+    }
 
-        }
 }
+
 
 #follow-us-img {
     margin: 20px 0 10px 0;
@@ -877,6 +892,15 @@ footer {
     border-collapse: separate;
     overflow: hidden;
     background-color: white;
+}
+
+#form-breakpoint {
+    display: block;
+}
+
+
+#bottom_nav {
+    display: none;
 }
 
 #sofia-popup {

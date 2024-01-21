@@ -22,12 +22,18 @@
     #view-all-arrow {
         display: none;
     }
+    #support-contact {
+        display: none;
+    }
 }
 
 
 @media (min-width: 768px) {
     .container {
         width:750px
+    }
+    #support-contact {
+        display: none;
     }
     .search-box {
         display: none;
@@ -140,14 +146,207 @@
     .container {
         width:970px
     }
+    #our-services-latest-news a:last-child {
+        text-align: right;
+    }
+    #bottom_nav {
+        display: flex !important;
+        background: $primary-color;
+        justify-content: space-around;
+        padding: 0 10% 0 10%;
+        .bottom-heading {
+            height: 100px;
+            text-align: center;
+            a {
+                position: relative;;
+                top: 18%;
+                color: white;
+            }
+        }
+    }
+   
+
+
+    #cover-img {
+        #bespoke-software-card .desktop-hidden {
+            display: none;
+        }
+        text-align: left !important;
+        h1, h2 {
+            position: relative;
+            left: 5%;
+        }
+        h1 {
+            font-size: 65px;
+        }
+        h2 {
+            font-size: 30px;
+        }
+    }
+    #four-cards {
+        gap: 20px;
+    }
     #three-cards {
         display: flex;
+        gap: 20px;
     }
+    #welcome-to-netmatters {
+        display: flex;
+        grid-template-columns: 
+        "1 2";
+    }
+    #why-choose-us-buttons, #reviews {
+        display: block;  
+    }
+    #about-section {
+        display: grid;
+        grid-template-areas: 
+        "1 2 3 4" !important;
+    }
+    #follow-us-img {
+        width: 30% !important;
+            #bottom_nav {
+        display: flex !important;
+        background: $primary-color;
+        justify-content: space-around;
+        padding: 0 10% 0 10%;
+        .bottom-heading {
+            height: 100px;
+            text-align: center;
+            a {
+                position: relative;;
+                top: 18%;
+                color: white;
+            }
+        }
+    }
+  
 
+    }
+    #form-breakpoint {
+        display: flex !important;
+        gap: 15%;
+        input {
+            width: 140% !important;
+        }
+    }
+    #support-contact {
+        display: flex !important;
+        gap: 10%;
+        align-content: stretch;
+        #support-nav {
+            background-color: #4183d7;
+            position: relative;
+            color: white;
+            border-radius: 3px;
+            padding: 0px;
+            vertical-align: bottom;
+            text-align: center;
+            width: 150px;
+            margin-left: 40px;
+            a {
+                color: white;
+                position: relative;
+                text-align: center;
+                top: 20px;
+                                font-size: 18px;
+
+                span {
+                    color: white;
+                    position: relative;
+                    vertical-align: middle;
+                }
+            }
+        }
+    
+    
+        #contact-nav {
+            background-color: #999aa2;
+            position: relative;
+            color: white;
+            border-radius: 3px;
+            padding: 0px;
+            vertical-align: bottom;
+            text-align: center;
+            width: 150px;
+            a {
+                color: white;
+                position: relative;
+                text-align: center;
+                top: 20px;
+                font-size: 18px;
+                span {
+                    color: white;
+                    position: relative;
+                    vertical-align: middle;
+                }
+            }
+       }
+    }
 }
+
+
+
 
 @media (min-width: 1260px) {
     .container {
         width:1200px
+    }
+
+    #news-section .card-news .news-photo {
+        width: auto !important;
+        justify-content: center;
+    }
+    
+    #two-cards {
+        position: relative;
+        right:20%;
+        width: 100%;
+    }
+    
+    #jamie {
+        display: block;
+    }
+    #jamie-bottom {
+        width: auto;
+    }
+
+    #email-signup-middle {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 50%;
+        justify-content: center;
+        a {
+            width: 150px !important;
+        }
+
+    }
+    #our-services-latest-news a:last-child {
+        text-align: right;
+    }
+
+    
+
+
+    #about-card {
+        margin: 40px;
+    }
+    #welcome-width {
+        width: 50% !important;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    #information {
+        display: flex;
+        justify-content: space-around;
+        #about-section {
+            display: inline-flex;
+            justify-content: space-around;
+            .about-card {
+                margin-right: 100px;
+            }
+        }
     }
 }
