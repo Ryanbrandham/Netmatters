@@ -25,12 +25,25 @@
     #support-contact {
         display: none;
     }
+    #sidebar-side {
+        width: 21%;
 }
-
+}
 
 @media (min-width: 768px) {
     #our-services-latest-news a:last-child {
         text-align: right;
+    }
+    #sticky-sofia {
+        position: relative;
+        width: 30%;
+        
+        float: right;
+        
+    }
+    #cookie-policy {
+        width: 50% !important;
+        left: 15%;
     }
     .container {
         width:750px
@@ -97,7 +110,7 @@
         margin-top: -50px;
     }
     #sidebar-side {
-        width: 61% !important;
+        width: 61%;
     }
     #sidebar {
         width: 40% !important;
@@ -137,7 +150,6 @@
         display: none;
     }
     #cookie-policy {
-        width: 80% !important;
         right: 0;
         bottom: 30%;
         height: 45%;
@@ -381,7 +393,7 @@
         text-align: right;
     }
 
-    
+
 
 
     #about-card {

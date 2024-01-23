@@ -1692,9 +1692,11 @@
 <script>
     function openCookies() {
     document.getElementById("cookie-policy").style.display = "block";
+    document.getElementById("cookie-overlay").style.display = "block";
     }
     function acceptCookies() {
     document.getElementById("cookie-policy").style.display = "none";
+    document.getElementById("cookie-overlay").style.display = "none";
     }
 </script>
 
@@ -1710,7 +1712,8 @@
     
 </div>
 
-
+<div id="cookie-overlay">
+</div>
 
 <div id="sidebar-side" onclick="closesidebar()">
 </div>
