@@ -21,12 +21,13 @@ html, body {
         top: 15px;
         position: relative;
     }
+    #support-nav
     a {
         text-decoration: none;
         padding-top: 10px;
         span {
             font-size: 30px;
-            color: $primary-color;
+            color: white;
 
         }
     }
@@ -65,7 +66,7 @@ html, body {
     margin-left: -60px;
     display: flex;
     border-radius: 0 3px 3px 0 !important;
-    background-color: gray !important;
+    background-color: #999aa2 !important;
     border: none;
     position: relative;
     justify-content: center;
@@ -83,6 +84,38 @@ html, body {
     z-index: 10000000000000000;
     opacity: 1;
 }
+
+
+#support-contact {
+    a, span {
+        text-decoration: none !important;
+        justify-content: center;
+    }
+    em {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        top: 15px;
+        position: relative;
+        span {
+            position: relative;
+            top: 5px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #sidebar {
     display: none;
@@ -106,6 +139,9 @@ html, body {
         width: 100%;
 
     }
+
+
+
 
     #above-submenu {
 
@@ -183,6 +219,10 @@ html, body {
 }
 
 
+#latest-news, #view-all-arrow h1 {
+    font-weight: bold !important;
+}
+
 #our-services-latest-news {
     display: flex;
     font-size: 40px;
@@ -191,24 +231,13 @@ html, body {
     color: $primary-color;
     #our-services, #latest-news {
         font-size: 40px;
-        font-weight: bold;
     }
-    a {
-        margin-left: 100px;
-        white-space: nowrap !important;
-        position: relative;
-        color: $primary-color;
-        span {
-            padding-left: 5px;
-        }
-        h1, span {
-        font-weight: bold;
-        }
-    }
+
 }
 
-#view-all-arrow {
-    text-align: right;
+#view-all-arrow h1 {
+    text-align: right !important;
+    font-size: 30px;
 }
 
 #cover-img {
@@ -223,7 +252,10 @@ html, body {
     .cover-img-transparency {
         background: rgba(black, 0.3);
 
-
+        a:hover {
+            color: white;
+            background-color: #566c88;
+        }
 
         h1 {
             font-size: 42px;
@@ -239,6 +271,7 @@ html, body {
             color: white;
             padding: 20px;
             background-color: $bespoke-color;
+            text-decoration: none !important;
             span {
                 position: relative;
                 left: 5px;
@@ -281,17 +314,19 @@ html, body {
     }
 }
 
-
+.sub-menu-banner a:hover {
+    text-decoration: underline !important;
+    padding: 0;
+}
 
 
 .sub-menu-banner {
+    text-decoration: none;
     position: absolute;
     width: 100vw;
     padding: 20px 0 50px 0;
     top: 230px;
     z-index: 1;
-    & :hover {
-        display: flex !important;
     }
     ul {
         list-style-type: none;
@@ -318,9 +353,8 @@ html, body {
                 font-size: 22px;
             }
         }
-
     }
-}
+
 
 .triangle {
     position: absolute;
@@ -627,8 +661,14 @@ position: relative;
 }
 
 
+#sidebar-button-open:hover, #sidebar-button-close:hover {
+    background-color: #22242e;
+}
+
 
 .card-services {
+    color: black;
+    text-decoration: none !important;
     @include flex-center; 
     flex-direction: column;
     border: 1px solid lightgray;
@@ -645,12 +685,13 @@ position: relative;
         transition: .5s ease;
     }
 
-    a {
+    em {
         font-size: 20px;
         margin-top: 20px;
         margin-bottom: 10px;
         border-radius: 5%;
         padding: 5px;
+        text-decoration: none !important;
     }
 
     small {
@@ -660,7 +701,7 @@ position: relative;
     &:hover {
         color: white !important;
         
-        span, a { 
+        span, em { 
         background: white !important;
         }
         }
@@ -677,99 +718,106 @@ position: relative;
        
     &#bespoke-card {
         span,
-        a,
+        em,
         &:hover, 
         &:hover span, 
-        &:hover a {
+        &:hover em {
             background-color: $bespoke-color;
             color: $bespoke-color;
         }
-        span, a {
+        span, em {
             color: white;
+            font-style: normal;
         }
-
     }
+
     &#it-support-card {
         span,
-        a,
+        em,
         &:hover, 
         &:hover span, 
-        &:hover a {
+        &:hover em {
             background-color: $it-support-color;
             color: $it-support-color;
         }
-        span, a {
+        span, em {
             color: white;
+            font-style: normal;
         }
 
     }
     &#digital-marketing-card {
         span,
-        a,
+        em,
         &:hover, 
         &:hover span, 
-        &:hover a {
+        &:hover em {
             background-color: $digital-marketing-color;
             color: $digital-marketing-color;
         }
-        span, a {
+        span, em {
             color: white;
+            font-style: normal;
         }
 
     }
     &#telecoms-card {
         span,
-        a,
+        em,
         &:hover, 
         &:hover span, 
-        &:hover a {
+        &:hover em {
             background-color: $telecom-color;
             color: $telecom-color;
         }
-        span, a {
+        span, em {
             color: white;
+            font-style: normal;
         }
 
     }
     &#web-design-card {
         span,
-        a,
+        em,
         &:hover, 
         &:hover span, 
-        &:hover a {
+        &:hover em {
             background-color: $web-design-color;
             color: $web-design-color;
         }
-        span, a {
+        span, em {
             color: white;
+            font-style: normal;
         }
 
     }
     &#cyber-security-card {
         span,
-        a,
+        em,
         &:hover, 
         &:hover span, 
-        &:hover a {
+        &:hover em {
             background-color: $cyber-security-color;
             color: $cyber-security-color;
         }
-        span, a {
+        span, em {
             color: white;
+            font-style: normal;
         }
 
     }
     &#developer-training-card {
         span,
-        a,
+        em,
         &:hover, 
         &:hover span, 
-        &:hover a {
+        &:hover em {
             background-color: $developer-training-color;
             color: $developer-training-color;
         }
-        span, a {
+        span, em {
             color: white;
+            font-style: normal;
         }
 
     }
@@ -793,7 +841,7 @@ position: relative;
         font-size: 20px;
     }
     input {
-        width: 100%;
+        width: 90%;
         padding: 16px;
     }
     .required {
@@ -806,6 +854,7 @@ position: relative;
         font-size: 20px;
         font-weight: bold;
         border-radius: 5px;
+        text-decoration: none;
     }
 }
 
@@ -885,6 +934,9 @@ position: relative;
     a {
         text-decoration: none;
         color: white;
+    }
+    a:hover {
+        text-decoration: underline;
     }
     p {
         font-size: 18px;
@@ -1067,6 +1119,10 @@ position: relative;
         border: 1px solid rgba(207, 207, 207, 0.726);
         background-color: white;
         margin-top: 20px;
+        &:hover {
+            transform: translateY(-10px);
+            transition: .5s ease;
+        }
         .news-photo {
             width: 100%;
         }
@@ -1097,6 +1153,8 @@ position: relative;
             padding: 10px 15px;
             border-radius: 5px;
             font-size: 18px;
+            text-decoration: none;
+            color: white;
         }
 
 
@@ -1119,7 +1177,9 @@ position: relative;
         }
 }
 
-
+#phone-button {
+    color: black;
+}
 #view-container2 {
     img {
         width: 60%;
@@ -1128,7 +1188,7 @@ position: relative;
 }
 
 #information {
-    background-color: rgb(46, 47, 54);
+    background-color: #323544;
     color: white !important;
     text-decoration: none;
     a {
@@ -1183,9 +1243,25 @@ footer {
 }
 
 
+#why-choose-us-buttons, #reviews {
+    a { 
+        text-decoration: none !important;
+    }
+}
+
+.button-primary:hover {
+    background-color: #121318;
+}
 #follow-us-img {
     margin: 20px 0 10px 0;
     width: 75%;
+}
+
+#google:hover {
+    background-color: #166af4;
+}
+#trustpilot:hover {
+    background-color: #009b69;
 }
 
 .sticky {

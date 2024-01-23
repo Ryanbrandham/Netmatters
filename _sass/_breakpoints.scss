@@ -29,6 +29,9 @@
 
 
 @media (min-width: 768px) {
+    #our-services-latest-news a:last-child {
+        text-align: right;
+    }
     .container {
         width:750px
     }
@@ -74,6 +77,10 @@
     #jamie {
         display: none;
     }
+    .our-services-latest-news {
+        display: flex;
+    }
+
     #two-cards {
         gap: 5%;
         text-wrap: wrap;
@@ -120,6 +127,9 @@
         display: none;
         }
     }
+    #view-all-arrow {
+        color: $primary-color !important;
+    }
     #welcome-to-netmatters {
         width: 100vw;
     }
@@ -150,9 +160,8 @@
     .container {
         width:970px
     }
-    #our-services-latest-news a:last-child {
-        text-align: right;
-    }
+
+
     #bottom_nav {
         display: block !important;
     }
@@ -204,6 +213,9 @@
         display: flex;
         gap: 20px;
     }
+    #contact-nav:hover, #search-box2-icon:hover {
+        background-color: #7e808a !important;
+    }
     #welcome-to-netmatters {
         display: flex;
         grid-template-columns: 
@@ -240,13 +252,17 @@
         display: flex !important;
         gap: 15%;
         input {
-            width: 140% !important;
+            width: 130% !important;
+            gap: 20px;
         }
     }
     #support-contact {
         display: flex !important;
         gap: 10%;
         align-content: stretch;
+        #support-nav:hover {
+            background-color: #2a6ec6 !important;
+        }
         #support-nav {
             background-color: #4183d7;
             position: relative;
@@ -283,6 +299,7 @@
             text-align: center;
             width: 150px;
             a {
+                text-decoration: none;
                 color: white;
                 position: relative;
                 text-align: center;
@@ -365,12 +382,7 @@
     }
 
     
-    .our-services-latest-news {
-        display: flex;
-    }
-    #view-all-arrow {
-        color: $primary-color;
-    }
+
 
     #about-card {
         margin: 40px;
@@ -394,5 +406,12 @@
     }
     #view-container2 {
         display: none;
+    }
+    #follow-us-img {
+        width: 300px !important;
+    }
+    footer p {
+        position: relative;
+        left: 150px;
     }
 }
