@@ -150,18 +150,28 @@
         text-align: right;
     }
     #bottom_nav {
+        display: block !important;
+    }
+    #bottom-nav-list {
         display: flex !important;
         background: $primary-color;
         justify-content: space-around;
         padding: 0 10% 0 10%;
-        .bottom-heading {
-            height: 100px;
-            text-align: center;
-            a {
-                position: relative;;
-                top: 18%;
-                color: white;
-            }
+        height: 90px;
+        text-align: center;
+        li {
+            list-style-type: none;
+        }
+        a  .bottom-span, small, p {
+            position: relative;
+            top: 18%;
+            padding: 0 50px;
+            text-decoration: none !important;
+            width: 173px;
+        }
+        :hover {
+            text-decoration: none;
+
         }
     }
    
@@ -205,24 +215,23 @@
     }
     #follow-us-img {
         width: 30% !important;
-            #bottom_nav {
-        display: flex !important;
-        background: $primary-color;
-        justify-content: space-around;
-        padding: 0 10% 0 10%;
-        .bottom-heading {
+    }
+    #bottom_nav {
+    display: flex !important;
+    background: $primary-color;
+    justify-content: space-around;
+    padding: 0 10% 0 10%;
+    .bottom-heading {
             height: 100px;
             text-align: center;
             a {
                 position: relative;;
-                top: 18%;
                 color: white;
             }
         }
     }
-  
 
-    }
+
     #form-breakpoint {
         display: flex !important;
         gap: 15%;
@@ -287,12 +296,37 @@
 
 
 
-
 @media (min-width: 1260px) {
     .container {
         width:1200px
     }
+    #why-choose-us-buttons, #reviews {
+        display: flex;
+        flex-wrap: nowrap;
+        
+            a { 
+                display: flex;
+                font-size: 20px;
+                position: relative;
 
+                span {
+                    position: relative;
+                    
+                }
+
+
+        }
+    }
+    #cover-img {
+        position: relative;
+        right: 10px;
+        background: url("../assets/images/home-O67Y.webp") 100% no-repeat !important;
+        width: auto;
+    }
+    .f-logo {
+        position: relative;
+        top: 0px !important;
+    }
     #news-section .card-news .news-photo {
         width: auto !important;
         justify-content: center;
@@ -327,7 +361,12 @@
     }
 
     
-
+    .our-services-latest-news {
+        display: flex;
+    }
+    #view-all-arrow {
+        color: $primary-color;
+    }
 
     #about-card {
         margin: 40px;
@@ -348,5 +387,8 @@
                 margin-right: 100px;
             }
         }
+    }
+    #view-container2 {
+        display: none;
     }
 }

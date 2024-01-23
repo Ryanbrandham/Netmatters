@@ -284,7 +284,294 @@ html, body {
 
 
 
+.sub-menu-banner {
+    position: absolute;
+    width: 100vw;
+    padding: 20px 0 50px 0;
+    top: 230px;
+    z-index: 1;
+    & :hover {
+        display: flex !important;
+    }
+    ul {
+        list-style-type: none;
+    }
+    .sub-menu-title {
+        margin: 10px 0 20px 0;
+        color: white;
+        font-size: 30px;
+        font-weight: bold;
+        width: 100% !important;
+    }
+    .sub-menu-list {
+        display: none;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: left;
+        width: 90%;
+        li {
+            width: 33%;
+            a {
+                color: white; 
+                line-height: 10px;
+                font-size: 22px;
+            }
+        }
 
+    }
+}
+
+.triangle {
+    position: absolute;
+    display: none;
+    z-index: 2 !important;
+    width: 0px;
+    top: 230px;
+    height: 0px;
+    border-style: solid;
+    border-width: 30px 87px 0 87px;
+    transform: rotate(0deg);
+ }
+
+ .triangle2 {
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 40px 40px 0 40px;
+    border-color: $primary-color transparent transparent transparent;
+    transform: rotate(0deg);
+ }
+
+.sub-menu-banner {
+    display: none;
+    left: 0;
+    span {
+        top: 4px;
+    }
+}
+#it-banner {
+    display: none;
+}
+#digital-banner {
+    display: none;
+}
+#telecoms-banner {
+    display: none;
+}
+#web-banner {
+    display: none;
+}
+#cyber-banner {
+    display: none;
+}
+#developer-banner {
+    display: none;
+}
+
+
+
+#bespoke-bottom-nav  {
+    .triangle {
+        border-color: $bespoke-color transparent transparent transparent;
+    }
+    a span {
+        color: $bespoke-color !important;
+    }
+    &:hover {
+        a span {
+            color: white !important;
+        }
+        background-color: $bespoke-color;
+        .triangle {
+            display: block;
+        }
+        .sub-menu-banner {
+            background-color: #526781 !important;
+            display: flex;
+            #bespoke-software-banner {
+                display: flex;
+            }
+        }
+    }
+}
+
+#it-bottom-nav {
+    .triangle {
+        border-color: $it-support-color transparent transparent transparent;
+    }
+    a span {
+        color: $it-support-color !important;
+    }
+    &:hover {
+        a span {
+            color: white !important;
+        }
+        background-color: $it-support-color;
+        .triangle {
+            display: block;
+        }
+        .sub-menu-banner {
+            background-color: #286abd !important;
+            display: flex;
+            #it-banner {
+                display: flex;
+            }
+        }
+    }
+}
+
+.box {
+    display: none;
+}
+
+.sticker-container {
+position: relative;
+    img:hover + .box {
+        position: absolute;
+        display: block;
+        background-color: $primary-color;
+        width: 200px;
+        bottom: 120px;
+        left: -38px;
+    } 
+    .triangle2 {
+        right: 60px;
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        border-style: solid;    
+        border-width: 40px 40px 0 40px;
+        border-color: $primary-color transparent transparent transparent;
+        transform: rotate(0deg);
+     }
+}
+
+
+
+
+
+
+#digital-bottom-nav {
+    .triangle {
+        border-color: $digital-marketing-color transparent transparent transparent;
+    }
+    a span {
+        color: $digital-marketing-color !important;
+    }
+    &:hover {
+        a span {
+            color: white !important;
+        }
+        background-color: $digital-marketing-color;
+        .triangle {
+            display: block;
+        }
+        .sub-menu-banner {
+            background-color: #25a25a !important;
+            display: flex;
+            #digital-banner {
+                display: flex;
+            }
+        }
+    }
+}
+#telecoms-bottom-nav {
+    .triangle {
+        border-color: $telecom-color transparent transparent transparent;
+    }
+    a span {
+        color: $telecom-color !important;
+    }
+    &:hover {
+        a span {
+            color: white !important;
+        }
+        background-color: $telecom-color;
+        .triangle {
+            display: block;
+        }
+        .sub-menu-banner {
+            background-color: #bc2c28 !important;
+            display: flex;
+            #telecoms-banner {
+                display: flex;
+            }
+        }
+    }
+}
+#web-bottom-nav {
+    .triangle {
+        border-color: $web-design-color transparent transparent transparent;
+    }
+    a span {
+        color: $web-design-color !important;
+    }
+    &:hover {
+        a span {
+            color: white !important;
+        }
+        background-color: $web-design-color;
+        .triangle {
+            display: block;
+        }
+        .sub-menu-banner {
+            background-color: #79539a !important;
+            display: flex;
+            #web-banner {
+                display: flex;
+            }
+        }
+    }
+}
+#cyber-bottom-nav {
+    .triangle {
+        border-color: $cyber-security-color transparent transparent transparent;
+    }
+    a span {
+        color: $cyber-security-color !important;
+    }
+    &:hover {
+        a span {
+            color: white !important;
+        }
+        background-color: $cyber-security-color;
+        .triangle {
+            display: block;
+        }
+        .sub-menu-banner {
+            background-color: #de093f !important;
+            display: flex;
+            #cyber-banner {
+                display: flex;
+            }
+        }
+    }
+}
+#developer-bottom-nav {
+    .triangle {
+        border-color: $developer-training-color transparent transparent transparent;
+    }
+    a span {
+        color: $developer-training-color !important;
+    }
+    &:hover {
+        a span {
+            color: white !important;
+        }
+        background-color: $developer-training-color;
+        .triangle {
+            display: block;
+        }
+        .sub-menu-banner {
+            background-color: #a3331d !important;
+            display: flex;
+            #developer-banner {
+                display: flex;
+            }
+        }
+    }   
+}
 
 
 
@@ -306,11 +593,10 @@ html, body {
 
     a {
         font-size: 20px;
-        padding: 10px 15px;
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 10px;
         border-radius: 5%;
-
+        padding: 5px;
     }
 
     small {
@@ -564,20 +850,25 @@ html, body {
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
+    font-size: 30px;
 
     a {
-        text-decoration: none;
         color: black;
         font-weight: bold;
-        font-size: 25px;
+        text-decoration: none;
+    }
+
     }
     span {
+        position: relative;
         vertical-align: bottom;
-        margin-bottom: 6.2px;
+        bottom: 10px;
     }
+
+
+.box {
+    position: absolute;
 }
-
-
 
 
 #work-carousel {
@@ -1032,6 +1323,7 @@ footer {
 }
 
 #view-our-work-carousel {
+    flex-direction: row;
     display: flex;
     height: 170px;
     padding: 50px 0 50px 0;
