@@ -78,6 +78,10 @@
         gap: 5%;
         text-wrap: wrap;
         display: flex;
+        .minute-read {
+            position: relative;
+            top: 0px;
+        }
         }
     #view-all {
         display: none;

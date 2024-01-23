@@ -431,12 +431,12 @@ position: relative;
         position: absolute;
         display: block;
         background-color: $primary-color;
-        width: 200px;
+        width: 250px;
         bottom: 120px;
         left: -38px;
     } 
     .triangle2 {
-        right: 60px;
+        right: 90px;
         position: absolute;
         width: 0px;
         height: 0px;
@@ -446,6 +446,59 @@ position: relative;
         transform: rotate(0deg);
      }
 }
+
+.box {
+    color: white;
+    text-align: center;
+    padding: 0px 20px;
+    border-radius: 5px;
+    h3, p {
+        margin-bottom: 20px;
+    }
+    p a {
+        text-decoration: none;
+        color: white;
+    }
+    .case-study-box {
+        background-color: red;
+        padding: 20px 30px;
+    }
+    .case-study {
+        color: white;
+        font-size: 15px;
+        text-wrap: wrap;
+
+    }
+    span {
+        position: relative;
+        left: 80px;
+        bottom: 66px;
+    }
+}
+
+
+#black-swan {
+    background-color: $bespoke-color;
+}
+#girl-guiding {
+    background-color: $it-support-color;
+}
+#sweetzy {
+    background-color: $digital-marketing-color;
+}
+#gdst {
+    background-color: $digital-marketing-color;
+}
+#ashcroft {
+    background-color: $web-design-color;
+}
+#one-traveller {
+    background-color: $web-design-color;
+}
+#searles {
+    background-color: $digital-marketing-color;
+}
+
 
 
 
@@ -859,11 +912,7 @@ position: relative;
     }
 
     }
-    span {
-        position: relative;
-        vertical-align: bottom;
-        bottom: 10px;
-    }
+
 
 
 .box {
