@@ -9,14 +9,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <!-- Google Material Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <!-- Bootstrap 3.0 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
-    <!-- Google Fonts --><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
-    <link href="dist/hamburgers.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts --><link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet">
+
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 
 
@@ -35,7 +35,7 @@
 
 <body>
     <div>
-        <div class="container" id="top_nav" class="sticky">
+        <div class="container sticky" id="top_nav">
             <div id="nav-buttons">
                 <a href=""><img src="assets/images/f-logo.webp" class="f-logo" alt="Netmatters logo"></a>
                 <div id="support-contact">
@@ -48,18 +48,18 @@
                 </div>
                 <a href="tel:--------" style="font-size:32px" id="phone-button"><span class="material-symbols-outlined">phone_in_talk</span></a>
                 <div id="search-box2">
-                    <form action="" method="post">
-                        <input id="search-box2-input" type="text" placeholder="Search..." search></input>
+                    <form method="post">
+                        <input id="search-box2-input" type="text" placeholder="Search...">
                     </form>
                     <button id="search-box2-icon" class="material-symbols-outlined">search</button>
                 </div>
-                <button style="font-size:32px" onclick="opensidebar()" id="sidebar-button-open"><span class="material-symbols-outlined">menu</span>
+                <button style="font-size:32px" onclick="opensidebar()" id="sidebar-button-open"><span class="material-symbols-outlined">menu</span></button>
                 <button style="font-size:32px" onclick="closesidebar()" id="sidebar-button-close"><span class="material-symbols-outlined">close</span></button>
             </div>
             <br>
             <br>
-            <form action="" method="post" class="search-box" >
-                <input type="text" placeholder="Search..." class="container"><span class="material-symbols-outlined">search</span></input>
+            <form method="post" class="search-box" >
+                <input type="text" placeholder="Search..." class="container"><span  id="search-icon" class="material-symbols-outlined">search</span>
             </form>
         </div>
         <div id="bottom_nav">
@@ -93,7 +93,7 @@
                                     <span class="link-text">Business Automation</span>
                                 </a>
                             </li>
-                            <br><br><br>
+
                             <li>
                                 <a href="#">
                                     <span class="icon-container">
@@ -119,7 +119,7 @@
                                     <span class="link-text">Bespoke Databases</span>
                                 </a>
                             </li>
-                            <br><br><br>
+
                             <li>
                                 <a href="#">
                                     <span class="icon-container">
@@ -145,7 +145,7 @@
                                     <span class="link-text">Business Central Implementation</span>
                                 </a>
                             </li>
-                            <br><br><br>
+
                             <li>
                                 <a href="#">
                                     <span class="icon-container">
@@ -171,7 +171,7 @@
                                     <span class="link-text">Customer Portal Development</span>
                                 </a>
                             </li>
-                            <br><br><br>
+
                             <li> 
                                 <a href="#">
                                     <span class="icon-container">
@@ -188,64 +188,64 @@
                     <a href="#"><span class="material-symbols-outlined bottom-span">monitor</span><br><small>IT</small><br><p>SUPPORT</p></a>
                     <div class="triangle"></div>
                     <div class="sub-menu-banner">
-                        <ul class="container sub-menu-list" id="it-banner" role="menu">
-                            <li class="sub-menu-title"><br>
-                                Our IT Support Services
-                            </li>
-                            
-                            
-                            <li class="sub-menu-item">
-                                <a href="#">
-                                    <span class="icon-container">
-                                        <span class="link-icon fa fa-cogs"></span>
-                                        </span>
-                                    <span class="link-text">Managed IT Support</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="icon-container">
-                                        <span class="link-icon fa fa-cogs"></span>
-                                        </span>
-                                    <span class="link-text">Business IT Support</span>
-                                </a>
-                            </li>
-                            <br><br><br>
-                            <li>
-                                <a href="#">
-                                    <span class="icon-container">
-                                        <span class="link-icon fa fa-cogs"></span>
-                                        </span>
-                                    <span class="link-text">Office 365 for Business</span>
-                                </a>
-                            </li>
-        
-                            <li>
-                                <a href="#">
-                                    <span class="icon-container">
-                                        <span class="link-icon fa fa-cogs"></span>
-                                        </span>
-                                    <span class="link-text">IT Consultancy</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="icon-container">
-                                        <span class="link-icon fa fa-cogs"></span>
-                                        </span>
-                                    <span class="link-text">Cloud Service Provider</span>
-                                </a>
-                            </li>
-                            <br><br><br>
-                            <li>
-                                <a href="#">
-                                    <span class="icon-container">
-                                        <span class="link-icon fa fa-cogs"></span>
-                                        </span>
-                                    <span class="link-text">Data Backup & Disaster Recovery</span>
-                                </a>
-                            </li>
-                        </ul>
+                    <ul class="container sub-menu-list" id="it-banner" role="menu">
+                        <li class="sub-menu-title"><br>
+                            Our IT Support Services
+                        </li>
+                        
+                        
+                        <li class="sub-menu-item">
+                            <a href="#">
+                                <span class="icon-container">
+                                    <span class="link-icon fa fa-cogs"></span>
+                                    </span>
+                                <span class="link-text">Managed IT Support</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-container">
+                                    <span class="link-icon fa fa-cogs"></span>
+                                    </span>
+                                <span class="link-text">Business IT Support</span>
+                            </a>
+                        </li>
+                        <br><br><br>
+                        <li>
+                            <a href="#">
+                                <span class="icon-container">
+                                    <span class="link-icon fa fa-cogs"></span>
+                                    </span>
+                                <span class="link-text">Office 365 for Business</span>
+                            </a>
+                        </li>
+    
+                        <li>
+                            <a href="#">
+                                <span class="icon-container">
+                                    <span class="link-icon fa fa-cogs"></span>
+                                    </span>
+                                <span class="link-text">IT Consultancy</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="icon-container">
+                                    <span class="link-icon fa fa-cogs"></span>
+                                    </span>
+                                <span class="link-text">Cloud Service Provider</span>
+                            </a>
+                        </li>
+                        <br><br><br>
+                        <li>
+                            <a href="#">
+                                <span class="icon-container">
+                                    <span class="link-icon fa fa-cogs"></span>
+                                    </span>
+                                <span class="link-text">Data Backup & Disaster Recovery</span>
+                            </a>
+                        </li>
+                    </ul>
                     </div>
                 </li>
                 <li class="bottom-heading" id="digital-bottom-nav">
@@ -586,14 +586,14 @@
 
 
 
-    <div id="cover-img" alt="">
+    <div id="cover-img">
         <div class="cover-img-transparency">
           
           
           
             <div class="container" id="bespoke-software-card">
                 <h1><br>Bespoke<br class="bespoke-break"> Software</h1>
-                <h2>Delivering expert bespoke software solutions<br> across a range of industries
+                <h2>Delivering expert bespoke software solutions<br> across a range of industries</h2>
                 <br>
                 <br>
                 <br>
@@ -617,7 +617,7 @@
     <br>
     <div id="our-services-latest-news" class="container">
         <h1 class="container" id="our-services">Our Services</h1>
-        <a href="#" class="container" id="view-our-work2-arrow"><h1>View Our Work<span class="material-symbols-outlined" >arrow_forward</span></h1></a>
+        <a href="#" class="container" id="view-our-work2"><h1>View Our Work<span class="material-symbols-outlined" >arrow_forward</span></h1></a>
     </div>
     <br>
 
@@ -687,17 +687,17 @@
     </div>
 
     <div id="work-carousel">
-        <img src="assets/images/norfolk_prohelp.webp">
-        <img src="assets/images/investing-in-future-growth.webp">
-        <img src="assets/images/norfolk-carbon-charter.webp">
-        <img src="assets/images/PPC_logo.webp">
-        <img src="assets/images/princess-royal-training.webp">
-        <img src="assets/images/future-50.webp">
-        <img src="assets/images/qms.webp">
-        <img src="assets/images/iso_27001.webp">
-        <img src="assets/images/skills-of-tomorrow.webp">
-        <img src="assets/images/google-partner.webp">
-        <img src="assets/images/living_wage.webp">
+        <img src="assets/images/norfolk_prohelp.webp" alt="norfolk prohelp logo">
+        <img src="assets/images/investing-in-future-growth.webp" alt="investing in future growth logo">
+        <img src="assets/images/norfolk-carbon-charter.webp" alt="norfolk carbon charter logo">
+        <img src="assets/images/PPC_logo.webp" alt="ppc logo">
+        <img src="assets/images/princess-royal-training.webp" alt="princess royal training logo">
+        <img src="assets/images/future-50.webp" alt="future 50 logo">
+        <img src="assets/images/qms.webp" alt="qms logo">
+        <img src="assets/images/iso_27001.webp" alt="iso logo">
+        <img src="assets/images/skills-of-tomorrow.webp" alt="skills of tomorrow logo">
+        <img src="assets/images/google-partner.webp" alt="google partner logo">
+        <img src="assets/images/living_wage.webp" alt="living wage logo">
 
     </div> 
 
@@ -705,7 +705,7 @@
     <div class="container" id="welcome-to-netmatters">
         <div id="welcome-width">
             <div class="container" id="welcome-first">
-                <h1><bold>Welcome To Netmatters</bold></h1>
+                <h1>Welcome To Netmatters</h1>
                 <strong>Netmatters is a leading 
                 <a href="#">Bespoke Software</a>, 
                 <a href="#">IT Support</a>, and 
@@ -728,7 +728,7 @@
             
         </div>
         
-        <div class="container" class="welcome-breakpoint">
+        <div class="container welcome-breakpoint">
             <h1>What Our Clients Think</h1>
             <br>
             <span class="material-symbols-outlined" id="stars">kid_starkid_starkid_starkid_starkid_star</span>
@@ -748,10 +748,8 @@
     </div>
 </div>
 
-
-    </bold></h1>
     <div class="our-services-latest-news container">
-        <h1 class="container" id="latest-news"><bold>Latest News</bold></h1>
+        <h1 class="container" id="latest-news">Latest News</h1>
         <a href="#" class="container" id="view-all-arrow"><h1>View All<span class="material-symbols-outlined" >arrow_forward</span></h1></a>
     </div>
     <br>
@@ -763,13 +761,13 @@
             <div class="card-news" id="coalition">
                 <div class="img-container">
                     <a href="#" class="news-button">NEWS</a>
-                    <img class="news-photo" src="assets/images/scion-coalition-scheme-Ody3.webp">
+                    <img class="news-photo" src="assets/images/scion-coalition-scheme-Ody3.webp" alt="scion coalition scheme banner">
                 </div>
                 <h2><strong>Scion Coalition Scheme Trainee Web Developer</strong></h2>
                 <p>Salary Range £22,000 per annum Hours 40 Location Wymondham, Norfolk. Flexible working hours and part...</p>
-                <a href="#" class="button" class="button-developer-training">READ MORE</a>
+                <a href="#" class="button button-developer-training">READ MORE</a>
                 <div class="poster">
-                    <img src="assets/images/rebecca-moore-1fh7.webp" class="avatar">
+                    <img src="assets/images/rebecca-moore-1fh7.webp" class="avatar" alt="rebecca moore avatar">
                     <div class="poster-text">
                         <p><strong>Posted by Rebecca Moore</strong><br>5nd January 2024</p>
                     </div>
@@ -782,7 +780,7 @@
             <div class="card-news" id="ambulance">
                 <div class="img-container">
                     <a href="#" class="news-button">NEWS</a>
-                    <img class="news-photo" src="assets/images/east-anglian-air-1pHi.webp">
+                    <img class="news-photo" src="assets/images/east-anglian-air-1pHi.webp" alt="east anglian air banner">
                 </div>
 
                 <h3>
@@ -792,9 +790,9 @@
                     </span>
                 </h3>
                     <p>The Client Championing ‘Your Local Life-Saving Charity’ the East Anglian Air Ambulance (EAAA) is a r...</p>
-                <a href="#" class="button" class="button-developer-training">READ MORE</a>
+                <a href="#" class="button button-developer-training">READ MORE</a>
                 <div class="poster">
-                    <img src="assets/images/netmatters-ltd-VXAv.webp" class="avatar">
+                    <img src="assets/images/netmatters-ltd-VXAv.webp" class="avatar" alt="netmatters avatar">
                     <div class="poster-text">
                         <p><strong>Posted by Netmatters</strong><br>15th December 2023</p>
                     </div>
@@ -806,7 +804,7 @@
         <div class="card-news" id="jamie">
             <div class="img-container">
                 <a href="#" class="news-button">NEWS</a>
-                <img class="news-photo" src="assets/images/jamie-slater-DJvi.webp">
+                <img class="news-photo" src="assets/images/jamie-slater-DJvi.webp" alt="jamie slater banner">
             </div>
             <div class="container" id="jamie-bottom">
                 <h3>
@@ -816,9 +814,9 @@
                     </span>
                 </h3>
                 <p>Today, we celebrate the brilliant accomplishments of Jamie Slater as he receives the Netmatters Long...</p>
-                <a href="#" class="button" class="button-developer-training">READ MORE</a>
+                <a href="#" class="button button-developer-training">READ MORE</a>
                 <div class="poster">
-                    <img src="assets/images/netmatters-ltd-VXAv.webp" class="avatar">
+                    <img src="assets/images/netmatters-ltd-VXAv.webp" class="avatar" alt="netmatters avatar">
                     <div class="poster-text">
                         <p><strong>Posted by Netmatters</strong><br>2nd January 2024</p>
                     </div>
@@ -846,7 +844,7 @@
         <div id="view-our-work-carousel">
             <div class="sticker-container">
 
-                <img src="assets/images/black_swan_logo.webp"> 
+                <img src="assets/images/black_swan_logo.webp" alt="black swan logo"> 
                 <div class="box">
                     <h3>Black Swan Care Group</h3>
                     <p>
@@ -864,7 +862,7 @@
                 </div>
             </div>
             <div class="sticker-container">
-                <img src="assets/images/xupes_logo.webp"> 
+                <img src="assets/images/xupes_logo.webp" alt="xupes logo"> 
                 <div class="box">
                     <h3>Xupes</h3>
 
@@ -872,7 +870,7 @@
                 </div>
             </div>
             <div class="sticker-container">
-                <img src="assets/images/beat_logo.webp"> 
+                <img src="assets/images/beat_logo.webp" alt="beat logo"> 
                 <div class="box">
                     <h3>BEAT</h3>
                     <p>
@@ -884,14 +882,14 @@
                 </div>
             </div>
             <div class="sticker-container">
-                <img src="assets/images/survey_solutions_logo.webp"> 
+                <img src="assets/images/survey_solutions_logo.webp" alt="survey solutions logo"> 
                 <div class="box">
                     <h3>Survey Solutions</h3>
                     <div class="triangle2"></div>
                 </div>
             </div>
             <div class="sticker-container">
-                <img src="assets/images/girl_guides_anglia_logo.webp">
+                <img src="assets/images/girl_guides_anglia_logo.webp" alt="girl guiding anglia logo">
                 <div class="box">
                     <h3>Girl Guiding Anglia</h3>
                     <p>
@@ -909,7 +907,7 @@
                 </div>
             </div>
             <div class="sticker-container">
-                <img src="assets/images/sweetzy_logo.webp">
+                <img src="assets/images/sweetzy_logo.webp" alt="sweetzy logo">
                 <div class="box">
                     <h3>Sweetzy</h3>
                     <p>
@@ -925,14 +923,14 @@
                 </div>
             </div>
             <div class="sticker-container">
-                <img src="assets/images/howespercivallogo.webp">
+                <img src="assets/images/howespercivallogo.webp" alt="howes percival logo">
                 <div class="box">
                     <h3>Howes Percival</h3>
                     <div class="triangle2"></div>
                 </div>
             </div>
             <div class="sticker-container">
-                <img src="assets/images/girls_day_school_trust_logob.webp">
+                <img src="assets/images/girls_day_school_trust_logob.webp" alt="girls day school trust logo">
                 <div class="box">
                     <h3>GDST</h3>
                     <p>
@@ -949,7 +947,7 @@
                 </div>
             </div>
             <div class="sticker-container">
-                <img src="assets/images/ashcroftlogo_landscape_goldblack_DP60P-small.webp">
+                <img src="assets/images/ashcroftlogo_landscape_goldblack_DP60P-small.webp" alt="ashcroft logo">
                 <div class="box">
                     <h3>Ashcroft Partnership LLP</h3>
                     <p>
@@ -967,7 +965,7 @@
                 </div>
             </div>
             <div class="sticker-container">
-                <img src="assets/images/onetravellerlogo_white_figuire.webp">
+                <img src="assets/images/onetravellerlogo_white_figuire.webp" alt="one traveller logo">
                 <div class="box">
                     <h3>One Traveller</h3>
                     <p>
@@ -985,7 +983,7 @@
                 </div>
             </div>
             <div class="sticker-container">
-                <img src="assets/images/searles_logo.webp">
+                <img src="assets/images/searles_logo.webp" alt="searles logo">
                 <div class="box">
                     <h3>Searles Leisure Resort</h3>
                     <p>
@@ -1002,7 +1000,7 @@
                 </div>
             </div>
             <div class="sticker-container">
-                <img src="assets/images/busseys_logo.webp">
+                <img src="assets/images/busseys_logo.webp" alt="busseys logo">
                 <div class="box">
                     <h3>Busseys</h3>
                     <p>
@@ -1014,7 +1012,7 @@
                 </div>
             </div>
             <div class="sticker-container">
-                <img src="assets/images/crane_logo.webp">
+                <img src="assets/images/crane_logo.webp" alt="crane logo">
                 <div class="box">
                     <h3>Crane Garden Buildings
                     </h3>
@@ -1036,18 +1034,18 @@
             <div id="form-breakpoint">
                 <div id="name">
                     <label for="name">Your Name <span class="required">*</span></label>
-                    <input type="text" id="name" name="name"><br>
+                    <input type="text"><br>
                 </div>
                 <div id="email">
                     <label for="email">Your Email <span class="required">*</span></label>
-                    <input type="text" id="email" name="email"><br>
+                    <input type="text"><br>
                 </div>
             </div>
             <br>
-            <div class="checkbox-wrapper-21" class="media-left" id="checkbox-left">
+            <div class="checkbox-wrapper-21 media-left" id="checkbox-left">
                 <label class="control control--checkbox">
                 <input type="checkbox">
-                <div class="control__indicator"></div>
+                <span class="control__indicator"></span>
                 </label>
             </div>
             <div class="email-signup-policy">
@@ -1064,7 +1062,7 @@
 
     <div class="container" id="information">
         <div class="information-card">
-            <img src="assets/images/nm-logo-white-med.webp" id="follow-us-img">
+            <img src="assets/images/nm-logo-white-med.webp" id="follow-us-img" alt="follow us image">
             <h4>FOLLOW US ON:</h4>
             <br>
                 
@@ -1103,13 +1101,13 @@
             <br>
     
         </div>   
-        
+    
     
     <div id="about-section">
         
 
         
-        <div id="about-card" class="information-card">
+        <div class="information-card">
             <h4>ABOUT NETMATTERS</h4>
             
             <ul>
@@ -1127,7 +1125,7 @@
             </ul>
         </div>
 
-        <div id="about-card" class="information-card">
+        <div class="information-card">
             <h4>OUR SERVICES</h4>
 
             <ul>
@@ -1138,11 +1136,10 @@
                 <li class=" "><a href="https://www.netmatters.co.uk/privacy-policy">Web Design</a></li>
                 <li class=" "><a href="https://www.netmatters.co.uk/cookie-policy">Cyber Security</a></li>
                 <li class=" "><a href="https://www.netmatters.co.uk/data-retention-disposal-policy">Developer Training</a></li>
-                <br>
             </ul>
         </div>    
 
-        <div id="about-card" class="information-card">
+        <div class="information-card">
 
             <h4>OUR INDUSTRIES</h4>
 
@@ -1155,11 +1152,10 @@
                 <li class=" "><a href="https://www.netmatters.co.uk/cookie-policy">Healthcare</a></li>
                 <li class=" "><a href="https://www.netmatters.co.uk/data-retention-disposal-policy">Education &amp; Training</a></li>
                 <li class=" "><a href="https://www.netmatters.co.uk/cctv-policy">Travel &amp; Leisure</a></li>
-                <br>
             </ul>
         </div>
 
-        <div id="about-card" class="information-card">
+        <div class="information-card">
             <h4>LOCATIONS</h4>
 
             <ul>
@@ -1167,18 +1163,18 @@
                 <li class=" "><a href="https://www.netmatters.co.uk/our-careers">Cambridge Office</a></li>
                 <li class=" "><a href="https://www.netmatters.co.uk/team">Wymondham Office</a></li>
                 <li class=" "><a href="https://www.netmatters.co.uk/contact-us">Great Yarmouth Office</a></li>
-                <br>
-                <br>
             </ul>
         </div>
     </div>
+    </div>
+
+    
 </main>
 
 <footer class="container">
     <br>
     <p>© Copyright Netmatters 2024. <br>All rights reserved <br><i> - </i>Sitemap</p>
 </footer>
-
 
 
 
@@ -1477,7 +1473,7 @@
 
     <div id="below-submenu">
         <ul>
-            <a href="#" class="sidebar-heading">OUR WORK</span></a>
+            <li><a href="#" class="sidebar-heading">OUR WORK</a></li>
             <li class="submenu-items">
                 <a href="#">
                     <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
@@ -1517,7 +1513,7 @@
 
 
 
-            <a href="#" class="sidebar-heading">OUR KNOWLEDGE</span></a>
+            <li><a href="#" class="sidebar-heading">OUR KNOWLEDGE</a></li>
             <li class="submenu-items">
                 <a href="#">
                     <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
@@ -1550,7 +1546,7 @@
 
 
 
-            <a href="#" class="sidebar-heading">TRAINING</span></a>
+            <li><a href="#" class="sidebar-heading">TRAINING</a></li>
             <li class="submenu-items">
                 <a href="#">
                     <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
@@ -1575,7 +1571,12 @@
                     <span class="sidebar-text">SCION COLLABORATORS</span>
                 </a>
             </li>
-            <a href="#" class="sidebar-heading">OUR COMPANY</span></a>
+            
+            
+            
+            <li><a href="#" class="sidebar-heading">OUR COMPANY</a></li>
+            
+            
             <li class="submenu-items">
                 <a href="#">
                     <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
@@ -1606,7 +1607,12 @@
                     <span class="sidebar-text">OUR BENEFITS</span>
                 </a>
             </li>
-            <a href="#" class="sidebar-heading">CONTACT US</span></a>
+
+
+            <li><a href="#" class="sidebar-heading">CONTACT US</a></li>
+           
+           
+           
             <li class="submenu-items">
                 <a href="#">
                     <span class="material-symbols-outlined">keyboard_double_arrow_right</span>
@@ -1631,12 +1637,12 @@
                     <span class="sidebar-text">GREAT YARMOUTH OFFICE</span>
                 </a>
             </li>
-            <a href="#" class="sidebar-heading">COVID RISK ASSESSMENTS</span></a>
-            <a href="#" class="sidebar-heading">SUPPORT</span></a>
+            <li><a href="#" class="sidebar-heading">COVID RISK ASSESSMENTS</a></li>
+            <li><a href="#" class="sidebar-heading">SUPPORT</a></li>
         </ul>
         
     </div>
-
+</div>
 
 </div>
 
@@ -1661,7 +1667,7 @@
         document.getElementById("sidebar-button-open").style.display = "inline-block";
         document.getElementById("sidebar-button-close").style.display = "none";
     }
-    </script>
+</script>
 
 <script>
     function openSofia() {
@@ -1680,7 +1686,6 @@
 
 
 
-</script>
 
 <script>
     function required() {
@@ -1706,8 +1711,8 @@
     <p>Our website uses cookies. This helps us provide you with a good experience on our website. To see what cookies we use and what they do, and to opt-in on non-essential cookies click "change settings". For a detailed explanation, click on "<a href="#">Privacy Policy</a>" otherwise click "Accept Cookies" to enter.</p>
     <hr>
     <div id="cookie-buttons">
-        <a href="#" id="change-settings">CHANGE SETTINGS</a>
-         <a href="#" id="accept-cookies" onclick="acceptCookies()" >ACCEPT COOKIES</a>
+        <button id="change-settings">CHANGE SETTINGS</a>
+         <button id="accept-cookies" onclick="acceptCookies()" >ACCEPT COOKIES</a>
     </div>
     
 </div>
@@ -1739,14 +1744,13 @@
             
         <div id="sofia-fields">
             <p>Could we have your name, please?</p>
-            <input placeholder="Name" autocomplete="false" maxlength="50" type="text"> 
+            <input placeholder="Name" maxlength="50" type="text"> 
             <p id="sofia-required">Required field</p>
         </div> 
 
-            <button id="sofia-submit" onclick="required()">
-                <p><span class="material-symbols-outlined">Chat</span>Chat</p>
-            </button>
-        </div>
+        <button id="sofia-submit" onclick="required()">
+            <span class="material-symbols-outlined">Chat</span>Chat
+        </button>
     </div>
 </div>
 

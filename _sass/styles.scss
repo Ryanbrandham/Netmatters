@@ -10,7 +10,6 @@ html, body {
 }
 #top_nav {
     background-color: white;
-    z-index: 1000000;
     #nav-buttons {
         padding-top: 30px;
         display: flex;
@@ -46,7 +45,9 @@ html, body {
 
 }
 
-
+#search-icon {
+    color: $primary-color !important;
+}
 
 #search-box2 {
     display: flex;
@@ -453,7 +454,7 @@ html, body {
         }
         .sub-menu-banner {
             background-color: #286abd !important;
-            display: flex;
+            display: flex !important;
             #it-banner {
                 display: flex;
             }
@@ -1443,7 +1444,7 @@ footer {
         padding-bottom: 40px;
         color: gray;
     }
-        #cookie-buttons a {
+        #cookie-buttons button {
         display: flex;
         justify-content: center;
         padding: 15px;
@@ -1451,6 +1452,7 @@ footer {
         font-weight: bold;
         border-radius: 5px;
         font-size: 18px;
+        border: none;
     }
     #change-settings {
         background-color: darkgray;
@@ -1483,7 +1485,9 @@ footer {
 }
 
 
-
+#view-our-work2 {
+    display: none;
+}
 
 #greeting {
     display: flex;
