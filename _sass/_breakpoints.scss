@@ -394,25 +394,37 @@
     }
 
 
-
-
-    #about-card {
-        margin: 40px;
+    #services-sub-menu {
+        display: block !important; 
     }
+
+
     #welcome-width {
         width: 50% !important;
         display: flex;
         margin: 0 auto;
     }
 
+    #sidebar {
+        width: 18% !important;
+    }
+    #sidebar-side {
+        width: 82% !important;
+    }
+
+    #above-submenu {
+        display: none;
+    }
+
     #information {
         display: flex;
+        width: 50%;
         justify-content: space-around;
         #about-section {
             display: inline-flex;
             justify-content: space-around;
-            .about-card {
-                margin-right: 100px;
+            .information-card {
+                margin-left: 20px;
             }
         }
     }

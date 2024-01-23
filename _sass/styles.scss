@@ -115,7 +115,11 @@ html, body {
 
 
 
-
+#information-container {
+    background-color: #323544;
+    width: 100vw !important;
+    padding-bottom: 25px;
+}
 
 
 #sidebar {
@@ -155,6 +159,8 @@ html, body {
         }
 
         .submenu-heading {
+            text-decoration: none;
+
             display: flex;
             font-size: 20px;
             outline: 1px solid rgba(0,0,0,.25);
@@ -165,7 +171,11 @@ html, body {
             justify-content: center;
             align-items: center;
             padding-top: 25px;
+            a {
+                text-decoration: none;
+            }
         }
+
 
         .submenu-items-group {
             padding: 0;
@@ -194,6 +204,7 @@ html, body {
         .sidebar-heading {
             background-color: transparent !important;
             font-size: 17px;
+            text-decoration: none;
         }
         ul {
             padding: 0;
@@ -206,6 +217,8 @@ html, body {
             background-color: rgba(0,0,0,.25); 
             margin: 1px auto 1px auto;
             border-top: 1px solid rgba(0,0,0,.45);
+            text-decoration: none;
+
             span {
                 vertical-align: bottom;
                 margin-right: 3px;
@@ -321,6 +334,14 @@ html, body {
     }
 }
 
+
+
+
+
+#services-sub-menu {
+    display: none;
+}
+
 .sub-menu-banner a:hover {
     text-decoration: underline !important;
     padding: 0;
@@ -339,7 +360,7 @@ html, body {
         list-style-type: none;
     }
     .sub-menu-title {
-        margin: 10px 0 20px 0;
+        margin: 0px 0 20px 0;
         color: white;
         font-size: 30px;
         font-weight: bold;
@@ -432,6 +453,9 @@ html, body {
             display: flex;
             #bespoke-software-banner {
                 display: flex;
+                li {
+                margin-bottom: 30px !important;
+                }
             }
         }
     }
@@ -539,6 +563,36 @@ position: relative;
 #searles {
     background-color: $digital-marketing-color;
 }
+
+
+#sidebar-bespoke {
+    color: $bespoke-color;
+}
+#sidebar-it-support {
+    color: $it-support-color;
+}
+#sidebar-digital {
+    color: $digital-marketing-color;
+}
+#sidebar-telecoms {
+    color: $telecom-color;
+}
+#sidebar-web {
+    color: $web-design-color;
+}
+#sidebar-security {
+    color: $cyber-security-color;
+}
+#sidebar-developer {
+    color: $developer-training-color;
+}
+
+
+
+
+
+
+
 
 
 
