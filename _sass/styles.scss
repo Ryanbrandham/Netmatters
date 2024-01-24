@@ -14,8 +14,12 @@ html, body {
     overflow-x: hidden;
 }
 
-main {
-    font-family: "poppins" !important;
+
+
+
+#our-services-latest-news, #three-cards, #four-cards {
+    font-family: "poppins";
+
 }
 
 
@@ -58,6 +62,11 @@ main {
         }
     }
 
+}
+
+
+#subscribe:hover {
+    background-color: #22242e;
 }
 
 #search-icon {
