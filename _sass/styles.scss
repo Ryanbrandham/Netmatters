@@ -3,10 +3,16 @@
 @import "global";
 @import "breakpoints";
 
-html, body {
+@font-face {
+    font-family: "poppins";
+    src: url(..\assets\fonts\poppins-medium.ttf);
+}
+
+main {
     width: 100vw !important;
     max-width: 100vw;
     overflow-x: hidden;
+    font-family: "poppins" !important;
 }
 #top_nav {
     background-color: white;
