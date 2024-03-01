@@ -318,13 +318,15 @@ a {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 50%;
     justify-content: center; }
     #email-signup-middle a {
       width: 150px !important; }
 
   #our-services-latest-news a:last-child {
     text-align: right; }
+
+  #our-services-latest-news {
+    display: flex; }
 
   #view-our-work2 {
     display: block !important; }
@@ -348,8 +350,7 @@ a {
 
   #information {
     display: flex;
-    width: 50%;
-    justify-content: space-around; }
+    justify-content: center; }
     #information #about-section {
       display: inline-flex;
       justify-content: space-around; }
@@ -364,7 +365,7 @@ a {
 
   footer p {
     position: relative;
-    left: 150px; } }
+    left: 370px; } }
 html, body {
   width: 100% !important;
   max-width: 100vw;
@@ -1001,7 +1002,6 @@ ul {
 
 #email-signup {
   background-color: rgba(0, 0, 0, 0.1);
-  width: 100vw;
   padding-top: 40px;
   padding-bottom: 50px;
   font-weight: bold; }

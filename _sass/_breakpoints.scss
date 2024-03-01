@@ -389,8 +389,8 @@
         display: flex;
         flex-direction: column;
         margin: 0 auto;
-        width: 50%;
         justify-content: center;
+
         a {
             width: 150px !important;
         }
@@ -398,6 +398,9 @@
     }
     #our-services-latest-news a:last-child {
         text-align: right;
+    }
+    #our-services-latest-news {
+        display: flex;
     }
 
     #view-our-work2 {
@@ -428,8 +431,7 @@
 
     #information {
         display: flex;
-        width: 50%;
-        justify-content: space-around;
+        justify-content: center;
         #about-section {
             display: inline-flex;
             justify-content: space-around;
@@ -446,6 +448,6 @@
     }
     footer p {
         position: relative;
-        left: 150px;
+        left: 370px;
     }
 }
