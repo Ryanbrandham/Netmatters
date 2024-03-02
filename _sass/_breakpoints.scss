@@ -1,4 +1,8 @@
 @media (max-width: 767px) {
+    #view-container {
+
+        margin-bottom: 0px !important;
+    }
     #search-box2, #search-box2-icon {
         display: none !important;
     }
@@ -41,6 +45,7 @@
         float: right;
         
     }
+
     #cookie-policy {
         width: 50% !important;
         left: 15%;

@@ -2,6 +2,9 @@ a {
   text-decoration: none; }
 
 @media (max-width: 767px) {
+  #view-container {
+    margin-bottom: 0px !important; }
+
   #search-box2, #search-box2-icon {
     display: none !important; }
 
@@ -1002,6 +1005,7 @@ ul {
 
 #email-signup {
   background-color: rgba(0, 0, 0, 0.1);
+  width: 100vw;
   padding-top: 40px;
   padding-bottom: 50px;
   font-weight: bold; }
@@ -1099,7 +1103,6 @@ ul {
   z-index: 10000; }
 
 #view-container, #view-container2 {
-  margin-bottom: -100px;
   justify-content: center;
   align-items: center;
   text-align: center;

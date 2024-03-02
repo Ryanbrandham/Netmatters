@@ -915,6 +915,7 @@ position: relative;
 
 #email-signup {
     background-color: rgba(0,0,0,.1);
+    width: 100vw;
     padding-top: 40px;
     padding-bottom: 50px;
     font-weight: bold;
@@ -1037,7 +1038,6 @@ position: relative;
 }
 
 #view-container, #view-container2 {
-    margin-bottom: -100px;
     justify-content: center;
     align-items: center;
     text-align: center;
