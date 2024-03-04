@@ -658,11 +658,13 @@ ul {
   text-align: left;
   width: 90%; }
   .sub-menu-list li {
-    width: 33%; }
+    width: 33%;
+    margin-bottom: 30px !important; }
     .sub-menu-list li a {
       color: white;
       line-height: 10px;
-      font-size: 22px; }
+      font-size: 20px;
+      text-wrap: nowrap; }
 
 .triangle {
   position: absolute;
