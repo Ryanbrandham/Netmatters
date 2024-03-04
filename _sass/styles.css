@@ -1373,7 +1373,8 @@ footer {
   display: block; }
 
 #bottom_nav {
-  display: none; }
+  display: none;
+  padding-bottom: 20px; }
 
 #sofia-popup {
   right: 10px;
