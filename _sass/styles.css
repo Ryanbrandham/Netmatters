@@ -19,8 +19,7 @@ a {
     display: none !important; }
 
   #our-services {
-    position: relative;
-    right: 13%; }
+    position: relative; }
 
   footer p i {
     display: none; }
@@ -88,7 +87,7 @@ a {
 
   #why-choose-us-buttons, #reviews {
     display: flex;
-    gap: 20px; }
+    gap: 7px; }
 
   #jamie {
     display: none; }
@@ -106,9 +105,6 @@ a {
 
   #view-all {
     display: none; }
-
-  #view-container2 {
-    margin-top: -50px; }
 
   #sidebar-side {
     width: 61%; }
@@ -385,7 +381,8 @@ html, body {
   #top_nav #nav-buttons {
     padding-top: 30px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    height: 90px !important; }
   #top_nav img {
     top: 15px;
     position: relative; }
@@ -403,9 +400,8 @@ html, body {
     color: white;
     border-radius: 5px; }
     #top_nav button span {
-      font-size: 40px;
       font-weight: bold;
-      vertical-align: middle; }
+      font-size: 40px; }
 
 #subscribe:hover {
   background-color: #22242e !important; }
@@ -448,7 +444,8 @@ html, body {
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
-  top: 15px;
+  top: 12px;
+  right: 2px;
   position: relative; }
   #support-contact em span {
     position: relative;
@@ -542,7 +539,8 @@ html, body {
   display: flex; }
 
 #latest-news, #view-all-arrow h1 {
-  font-weight: bold !important; }
+  font-weight: bold !important;
+  text-wrap: nowrap; }
 
 #our-services-latest-news {
   font-size: 40px;
@@ -550,7 +548,8 @@ html, body {
   text-decoration: none;
   color: #333645 !important; }
   #our-services-latest-news #our-services, #our-services-latest-news #latest-news {
-    font-size: 40px; }
+    font-size: 40px;
+    padding: 0; }
   #our-services-latest-news h1, #our-services-latest-news a {
     color: #333645;
     font-weight: bold; }
@@ -595,7 +594,8 @@ html, body {
     .cover-img-transparency a span {
       position: relative;
       left: 5px;
-      vertical-align: bottom; }
+      bottom: 2px;
+      vertical-align: middle; }
 
 .button {
   background-color: #67809f;
@@ -920,13 +920,12 @@ ul {
   flex-direction: column;
   border: 1px solid lightgray;
   border-radius: 15px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 15px;
   margin-bottom: 20px;
-  background: #ffffff;
+  background: transparent;
   top: 0;
   transition: .5s ease;
-  box-shadow: 3px 3px rgba(0, 0, 0, 0.05) !important; }
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1); }
   .card-services:hover {
     transform: translateY(-10px);
     transition: .5s ease; }
@@ -1015,7 +1014,7 @@ ul {
     padding-top: 5px;
     font-size: 20px; }
   #email-signup input {
-    width: 90%;
+    width: 100%;
     padding: 16px; }
   #email-signup .required {
     color: red; }
@@ -1106,9 +1105,10 @@ ul {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 30px; }
+  font-size: 30px;
+  margin-bottom: -90px; }
   #view-container a, #view-container2 a {
-    color: black;
+    color: #333645;
     font-weight: bold;
     text-decoration: none; }
 
@@ -1172,6 +1172,8 @@ ul {
 
 #news-section {
   padding-bottom: 30px; }
+  #news-section .news-button:hover {
+    text-decoration: underline; }
   #news-section #ambulance h2, #news-section #ambulance h3 {
     color: #d64541; }
   #news-section #ambulance .img-container {
@@ -1235,7 +1237,7 @@ ul {
   #news-section p {
     justify-content: center;
     padding: 0px 25px;
-    color: gray; }
+    color: #333645; }
   #news-section a {
     display: inline-block;
     font-weight: bold;
@@ -1306,7 +1308,9 @@ footer {
     background-color: #d93175; }
 
 #why-choose-us-buttons a, #reviews a {
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  font-size: 20px;
+  text-wrap: nowrap; }
 
 .button-primary:hover {
   background-color: #121318; }
@@ -1496,6 +1500,14 @@ footer {
     object-fit: contain; }
     #view-our-work-carousel img:hover {
       filter: grayscale(0); }
+
+#view-our-work {
+  color: #333645 !important;
+  font-weight: 600; }
+  #view-our-work span {
+    font-size: 30px;
+    position: relative;
+    top: 5px; }
 
 #view-our-work2 {
   display: none; }
