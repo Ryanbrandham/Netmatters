@@ -46,7 +46,7 @@ a {
     left: 15%; }
 
   .container {
-    width: 750px; }
+    width: 970px; }
 
   #support-contact {
     display: none; }
@@ -637,7 +637,7 @@ html, body {
   position: absolute;
   width: 100vw;
   padding: 20px 0 50px 0;
-  top: 230px;
+  top: 220px;
   z-index: 1; }
 
 ul {
@@ -669,7 +669,7 @@ ul {
   display: none;
   z-index: 2 !important;
   width: 0px;
-  top: 230px;
+  top: 220px;
   height: 0px;
   border-style: solid;
   border-width: 30px 87px 0 87px;
