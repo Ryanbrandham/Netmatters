@@ -377,6 +377,7 @@ html, body {
   color: yellow; }
 
 #top_nav {
+  z-index: 10000000000000000 !important;
   background-color: white; }
   #top_nav #nav-buttons {
     padding-top: 30px;
@@ -560,7 +561,7 @@ html, body {
   text-align: right !important;
   font-size: 25px; }
 
-#cover-img {
+.cover-img {
   height: 550px;
   display: flex;
   flex-direction: column;
